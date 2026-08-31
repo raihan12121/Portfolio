@@ -1,52 +1,58 @@
 /* ==========================================================================
-   MUHAMMAD RAIHAN MOLLA - NEOMORPHISM (SOFT UI) DESIGN SYSTEM
-   Bespoke Dark Charcoal Slate Tactile Interface
+   MUHAMMAD RAIHAN MOLLA - CYBER EMERALD NEOMORPHISM (SOFT UI) DESIGN SYSTEM
+   Advanced AI & Systems Research Laboratory
+   Strictly Green / Emerald / Mint Palette (Zero Teal / Zero Purple)
    ========================================================================== */
 
-/* --- Neomorphic Tokens & Variables --- */
+/* --- Design Tokens --- */
 :root {
-  /* Color Palette - Matte Charcoal Slate */
-  --neo-bg: #181c26;
-  --neo-bg-light: #1b202c;
-  --neo-bg-dark: #141720;
-  --neo-bg-card: #181c26;
+  /* Matte Charcoal Forest Base */
+  --neo-bg: #11151e;
+  --neo-bg-light: #151a25;
+  --neo-bg-dark: #0a0d14;
+  --neo-bg-card: #131822;
 
-  /* Shadow Physics */
-  --neo-shadow-light: #202533;
-  --neo-shadow-dark: #101319;
-  --neo-shadow-soft-light: rgba(36, 42, 58, 0.7);
-  --neo-shadow-soft-dark: rgba(14, 16, 23, 0.8);
+  /* Neomorphic Shadow Physics */
+  --neo-shadow-light: #18202d;
+  --neo-shadow-dark: #090c13;
+  --neo-shadow-soft-light: rgba(26, 34, 48, 0.7);
+  --neo-shadow-soft-dark: rgba(9, 12, 19, 0.85);
 
-  /* Gradients for Convex / Concave 3D Sheen */
-  --neo-convex: linear-gradient(145deg, #1a1e29, #151821);
-  --neo-concave: linear-gradient(145deg, #151821, #1a1e29);
-  --neo-flat: #181c26;
+  /* Gradients for Convex / Concave Sheen */
+  --neo-convex: linear-gradient(145deg, #141924, #0f131b);
+  --neo-concave: linear-gradient(145deg, #0f131b, #141924);
+  --neo-flat: #11151e;
 
   /* Outset Elevations (Extruded) */
   --neo-outset-xs: 3px 3px 6px var(--neo-shadow-dark), -3px -3px 6px var(--neo-shadow-light);
   --neo-outset-sm: 5px 5px 10px var(--neo-shadow-dark), -5px -5px 10px var(--neo-shadow-light);
   --neo-outset: 8px 8px 18px var(--neo-shadow-dark), -8px -8px 18px var(--neo-shadow-light);
   --neo-outset-lg: 12px 12px 26px var(--neo-shadow-dark), -12px -12px 26px var(--neo-shadow-light);
-  --neo-outset-hover: 11px 11px 22px var(--neo-shadow-dark), -11px -11px 22px var(--neo-shadow-light);
 
-  /* Inset Depressions (Sunken / Debossed / Wells) */
+  /* Inset Depressions (Debossed / Sunken Wells) */
   --neo-inset-xs: inset 2px 2px 4px var(--neo-shadow-dark), inset -2px -2px 4px var(--neo-shadow-light);
   --neo-inset-sm: inset 4px 4px 8px var(--neo-shadow-dark), inset -4px -4px 8px var(--neo-shadow-light);
   --neo-inset: inset 6px 6px 12px var(--neo-shadow-dark), inset -6px -6px 12px var(--neo-shadow-light);
   --neo-inset-deep: inset 8px 8px 16px var(--neo-shadow-dark), inset -8px -8px 16px var(--neo-shadow-light);
 
-  /* Precise Glowing Accents */
-  --accent-cyan: #38bdf8;
-  --accent-blue: #3b82f6;
+  /* Cyber Emerald Green Accent Spectrum */
   --accent-emerald: #10b981;
+  --accent-mint: #34d399;
+  --accent-lime: #22c55e;
+  --accent-bright-green: #4ade80;
+  --accent-forest: #059669;
   --accent-amber: #f59e0b;
-  --accent-purple: #a855f7;
+
+  /* Primary Accent & Glow */
+  --primary-accent: #10b981;
+  --accent-glow: 0 0 20px rgba(16, 185, 129, 0.35);
+  --accent-glow-strong: 0 0 35px rgba(52, 211, 153, 0.45);
 
   /* Typography Colors */
   --text-primary: #f1f5f9;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
-  --text-accent: #38bdf8;
+  --text-accent: #10b981;
 
   /* Fonts */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -90,7 +96,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Custom Neomorphic Scrollbar */
+/* Custom Neomorphic Emerald Scrollbar */
 ::-webkit-scrollbar {
   width: 9px;
 }
@@ -104,11 +110,11 @@ body {
   box-shadow: var(--neo-outset-xs);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-cyan);
+  background: var(--accent-emerald);
 }
 
 ::selection {
-  background: rgba(56, 189, 248, 0.3);
+  background: rgba(16, 185, 129, 0.35);
   color: #ffffff;
 }
 
@@ -141,8 +147,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-mono);
 }
 
-.gradient-accent {
-  background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+.gradient-green {
+  background: linear-gradient(135deg, #10b981 0%, #34d399 50%, #4ade80 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -176,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
   margin-bottom: 0.85rem;
   padding: 0.35rem 0.85rem;
   border-radius: var(--radius-full);
@@ -240,7 +246,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
   font-family: var(--font-mono);
   font-size: 0.85rem;
   font-weight: 700;
@@ -268,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link.active {
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
   box-shadow: var(--neo-inset-xs);
   background: var(--neo-bg);
   font-weight: 600;
@@ -280,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 0.75rem;
 }
 
-/* Neomorphic Tactile Buttons */
+/* Neomorphic Emerald Tactile Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -311,11 +317,12 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary {
   background: var(--neo-convex);
   color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(16, 185, 129, 0.2);
 }
 
 .btn-primary:hover {
-  color: var(--accent-cyan);
+  color: var(--accent-mint);
+  border-color: rgba(16, 185, 129, 0.4);
 }
 
 .btn-secondary {
@@ -329,12 +336,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-accent {
   background: var(--neo-convex);
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
 }
 
 .btn-accent:hover {
-  color: #38bdf8;
-  box-shadow: var(--neo-outset), 0 0 20px rgba(56, 189, 248, 0.2);
+  color: var(--accent-mint);
+  box-shadow: var(--neo-outset), var(--accent-glow);
 }
 
 .mobile-toggle-btn {
@@ -391,7 +398,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 1.1fr 0.9fr;
   gap: 3.5rem;
   align-items: center;
 }
@@ -410,7 +417,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: var(--radius-full);
   background: var(--neo-bg);
   box-shadow: var(--neo-inset-sm);
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
   font-family: var(--font-mono);
   font-size: 0.78rem;
   width: fit-content;
@@ -431,8 +438,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #10b981;
-  box-shadow: 0 0 8px #10b981;
+  background: var(--accent-emerald);
+  box-shadow: 0 0 10px var(--accent-emerald);
 }
 
 .hero-title {
@@ -444,7 +451,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-role-title {
   font-family: var(--font-mono);
   font-size: 1.05rem;
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
   margin-top: -0.5rem;
 }
 
@@ -502,7 +509,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-mono);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
   line-height: 1;
 }
 
@@ -512,7 +519,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
 }
 
-/* Hero Right Interactive Lab Showcase Card */
+/* --- Hero Right Advanced Research Control Station --- */
 .hero-lab-card {
   background: var(--neo-convex);
   border-radius: var(--radius-lg);
@@ -549,18 +556,18 @@ h1, h2, h3, h4, h5, h6 {
 .lab-tab-btn.active {
   background: var(--neo-convex);
   box-shadow: var(--neo-outset-xs);
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
   font-weight: 600;
 }
 
 .lab-canvas-container {
-  height: 240px;
+  height: 230px;
   position: relative;
   background: var(--neo-bg);
   border-radius: var(--radius-md);
   box-shadow: var(--neo-inset-deep);
   overflow: hidden;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 #hero-incursion-canvas {
@@ -569,47 +576,83 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-.lab-card-footer {
+/* Physics Sliders & Control Panel */
+.lab-controls-panel {
   background: var(--neo-bg);
   box-shadow: var(--neo-inset-sm);
   border-radius: var(--radius-md);
-  padding: 1.15rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
-.lab-meta-row {
+.slider-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0.4rem;
-}
-
-.lab-meta-title {
-  font-size: 0.92rem;
-  font-weight: 600;
-  color: #f1f5f9;
-}
-
-.lab-meta-tag {
+  gap: 1rem;
+  font-size: 0.78rem;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  padding: 0.2rem 0.55rem;
+}
+
+.slider-label {
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.neo-range-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: var(--neo-bg-dark);
+  box-shadow: var(--neo-inset-xs);
+  border-radius: var(--radius-full);
+  outline: none;
+}
+
+.neo-range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
   background: var(--neo-convex);
   box-shadow: var(--neo-outset-xs);
-  color: var(--accent-cyan);
-  border-radius: var(--radius-xs);
+  border: 1px solid var(--accent-emerald);
+  cursor: pointer;
+  transition: transform 0.1s;
 }
 
-.lab-meta-desc {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  line-height: 1.5;
+.neo-range-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: var(--neo-outset-sm), var(--accent-glow);
+}
+
+.slider-val-readout {
+  color: var(--accent-emerald);
+  font-weight: 700;
+  min-width: 40px;
+  text-align: right;
+}
+
+.lab-telemetry-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.6rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
 }
 
 /* --- Research & Theses Section --- */
 .research-grid {
   display: flex;
   flex-direction: column;
-  gap: 2.25rem;
+  gap: 2.5rem;
 }
 
 .research-card {
@@ -653,11 +696,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tag-badge.accent {
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
 }
 
 .tag-badge.status {
-  color: var(--accent-emerald);
+  color: var(--accent-mint);
+  border: 1px solid rgba(16, 185, 129, 0.2);
 }
 
 .research-title {
@@ -694,9 +738,73 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .research-detail-item i {
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
   flex-shrink: 0;
   margin-top: 4px;
+}
+
+/* Benchmark Comparison Meters */
+.benchmark-meter-block {
+  background: var(--neo-bg);
+  box-shadow: var(--neo-inset-sm);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.benchmark-meter-title {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent-emerald);
+  margin-bottom: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.benchmark-bars-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.benchmark-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
+.benchmark-dataset-name {
+  width: 130px;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.benchmark-progress-track {
+  flex: 1;
+  height: 8px;
+  background: var(--neo-bg-dark);
+  box-shadow: var(--neo-inset-xs);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  position: relative;
+}
+
+.benchmark-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981, #34d399);
+  border-radius: var(--radius-full);
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+  transition: width 1.2s ease-in-out;
+}
+
+.benchmark-score-text {
+  width: 70px;
+  text-align: right;
+  color: var(--accent-mint);
+  font-weight: 700;
 }
 
 .research-stack-bar {
@@ -706,6 +814,23 @@ h1, h2, h3, h4, h5, h6 {
   gap: 0.5rem;
   padding-top: 1.25rem;
   border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* Interactive AQI Forecasting Explorer Canvas */
+.forecast-chart-container {
+  height: 180px;
+  background: var(--neo-bg);
+  box-shadow: var(--neo-inset-deep);
+  border-radius: var(--radius-md);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+
+#aqi-forecast-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 /* --- Systems & Products Section --- */
@@ -738,7 +863,7 @@ h1, h2, h3, h4, h5, h6 {
 .product-eyebrow {
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
   margin-bottom: 0.5rem;
 }
 
@@ -798,7 +923,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .link-item:hover {
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
   box-shadow: var(--neo-outset-sm);
 }
 
@@ -835,7 +960,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
   margin-bottom: 1.25rem;
 }
 
@@ -873,7 +998,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .category-title i {
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
 }
 
 .skill-items-list {
@@ -894,7 +1019,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skill-pill:hover {
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
   box-shadow: var(--neo-outset-xs);
   background: var(--neo-convex);
 }
@@ -937,7 +1062,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
   background: var(--neo-bg);
   box-shadow: var(--neo-inset-xs);
   padding: 0.2rem 0.65rem;
@@ -1022,7 +1147,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
 }
 
 .channel-label {
@@ -1055,6 +1180,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 0.6rem;
   animation: toastFade 0.3s ease-out;
+  border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
 @keyframes toastFade {
@@ -1083,7 +1209,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: var(--radius-full);
   background: var(--neo-convex);
   box-shadow: var(--neo-outset-xs);
-  color: var(--accent-cyan);
+  color: var(--accent-emerald);
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;

@@ -28,7 +28,7 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Neomorphism Stylesheet -->
+  <!-- Cyber Emerald Neomorphism Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -58,7 +58,7 @@
         <!-- Nav Actions -->
         <div class="nav-actions">
           <a href="Muhammad Raihan Molla-CV.pdf" target="_blank" class="btn btn-secondary btn-resume-nav" download>
-            <i data-lucide="file-down" style="width: 15px; height: 15px;"></i>
+            <i data-lucide="file-down" style="width: 15px; height: 15px; color: var(--accent-emerald);"></i>
             <span>Curriculum Vitae</span>
           </a>
           <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle navigation">
@@ -97,7 +97,7 @@
           </div>
 
           <h1 class="hero-title">
-            Translating Machine Learning Research into <span class="gradient-accent">Real-World AI Systems.</span>
+            Translating Machine Learning Research into <span class="gradient-green">Real-World AI Systems.</span>
           </h1>
 
           <div class="hero-role-title">AI Engineer · ML Researcher · Systems &amp; Mobile Developer</div>
@@ -108,11 +108,11 @@
 
           <div class="hero-action-row">
             <a href="#research" class="btn btn-primary">
-              <i data-lucide="book-open" style="width: 16px; height: 16px;"></i>
+              <i data-lucide="book-open" style="width: 16px; height: 16px; color: var(--accent-emerald);"></i>
               Explore Research
             </a>
             <a href="#products" class="btn btn-secondary">
-              <i data-lucide="cpu" style="width: 16px; height: 16px;"></i>
+              <i data-lucide="cpu" style="width: 16px; height: 16px; color: var(--accent-emerald);"></i>
               Systems &amp; Apps
             </a>
             <a href="Muhammad Raihan Molla-CV.pdf" target="_blank" class="btn btn-accent" download>
@@ -150,29 +150,44 @@
           </div>
         </div>
 
-        <!-- Hero Right Column: Neomorphic Lab Showcase -->
+        <!-- Hero Right Column: Advanced Research Control Station -->
         <div class="hero-lab-card">
           <div class="lab-card-header">
-            <div class="lab-tabs">
-              <button class="lab-tab-btn active" data-lab-tab="incursion">⚡ Incursion Physics</button>
-              <button class="lab-tab-btn" data-lab-tab="fft">🔬 FFT Forensics</button>
-              <button class="lab-tab-btn" data-lab-tab="mobile">📱 ARI Mobile Lab</button>
-            </div>
-            <span class="mono" style="font-size: 0.72rem; color: #10b981; font-weight: 600;">ACTIVE</span>
+            <span class="mono" style="font-size: 0.78rem; font-weight: 700; color: var(--accent-emerald);">
+              ⚡ INCURSION: GENERAL RELATIVITY LAB
+            </span>
+            <span class="mono" style="font-size: 0.72rem; color: var(--accent-mint); font-weight: 600;" id="telemetry-fps">60 FPS</span>
           </div>
 
           <div class="lab-canvas-container">
             <canvas id="hero-incursion-canvas"></canvas>
           </div>
 
-          <div class="lab-card-footer">
-            <div class="lab-meta-row">
-              <span class="lab-meta-title" id="lab-meta-title">Incursion: Black Hole Geodesics</span>
-              <span class="lab-meta-tag" id="lab-meta-tag">27 GLSL Shaders · 30k Particles</span>
+          <!-- Interactive Physics Sliders -->
+          <div class="lab-controls-panel">
+            <div class="slider-row">
+              <span class="slider-label">Kerr Spin (a/M):</span>
+              <input type="range" class="neo-range-slider" id="slider-bh-spin" min="0.0" max="0.99" step="0.01" value="0.88">
+              <span class="slider-val-readout" id="val-bh-spin">0.88</span>
             </div>
-            <p class="lab-meta-desc" id="lab-meta-desc">
-              Relativistic Doppler beaming &amp; Kerr black hole accretion physics presented at BUBT.
-            </p>
+
+            <div class="slider-row">
+              <span class="slider-label">Disk Tilt Angle:</span>
+              <input type="range" class="neo-range-slider" id="slider-bh-inc" min="5" max="75" step="1" value="35">
+              <span class="slider-val-readout" id="val-bh-inc">35°</span>
+            </div>
+
+            <div class="slider-row">
+              <span class="slider-label">Particle Velocity:</span>
+              <input type="range" class="neo-range-slider" id="slider-bh-vel" min="0.2" max="2.5" step="0.1" value="1.0">
+              <span class="slider-val-readout" id="val-bh-vel">1.0x</span>
+            </div>
+
+            <div class="lab-telemetry-strip">
+              <span id="telemetry-particles">420 particles</span>
+              <span>Ray-Marching Geodesics</span>
+              <span>Presented @ BUBT</span>
+            </div>
           </div>
         </div>
 
@@ -206,14 +221,41 @@
               Investigated generalization vulnerabilities in deepfake detection across unconstrained generative domains. Developed a dual-stream spatial and Fast Fourier Transform (FFT) frequency fusion network utilizing an EfficientNet-B4 backbone to identify imperceptible frequency-domain manipulation artifacts.
             </p>
 
+            <!-- Benchmark Metrics Comparison Meter -->
+            <div class="benchmark-meter-block">
+              <div class="benchmark-meter-title">
+                <span>Cross-Dataset Evaluation AUC Scores (ROC-AUC)</span>
+                <span style="color: var(--text-muted); font-size: 0.72rem;">Zero-Shot Domain Shift</span>
+              </div>
+              <div class="benchmark-bars-list">
+                <div class="benchmark-row">
+                  <span class="benchmark-dataset-name">FaceForensics++ (FF++)</span>
+                  <div class="benchmark-progress-track">
+                    <div class="benchmark-progress-fill" style="width: 96.4%;"></div>
+                  </div>
+                  <span class="benchmark-score-text">96.4% AUC</span>
+                </div>
+                <div class="benchmark-row">
+                  <span class="benchmark-dataset-name">Celeb-DF (v2)</span>
+                  <div class="benchmark-progress-track">
+                    <div class="benchmark-progress-fill" style="width: 94.2%;"></div>
+                  </div>
+                  <span class="benchmark-score-text">94.2% AUC</span>
+                </div>
+                <div class="benchmark-row">
+                  <span class="benchmark-dataset-name">DFDC (Wild Gen)</span>
+                  <div class="benchmark-progress-track">
+                    <div class="benchmark-progress-fill" style="width: 89.8%;"></div>
+                  </div>
+                  <span class="benchmark-score-text">89.8% AUC</span>
+                </div>
+              </div>
+            </div>
+
             <ul class="research-details-list">
               <li class="research-detail-item">
                 <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
                 <span><strong>Dual-Stream Architecture:</strong> Fuses RGB spatial pixel representations with 2D FFT magnitude spectrums to expose high-frequency blending boundaries.</span>
-              </li>
-              <li class="research-detail-item">
-                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
-                <span><strong>Cross-Dataset Benchmark:</strong> Rigorously benchmarked on <strong>FaceForensics++ (FF++)</strong>, <strong>Celeb-DF</strong>, and <strong>DFDC</strong> datasets to quantify out-of-distribution domain shift.</span>
               </li>
               <li class="research-detail-item">
                 <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
@@ -231,7 +273,7 @@
             </div>
           </article>
 
-          <!-- Research 2: AQI Prediction -->
+          <!-- Research 2: AQI Prediction & Interactive Forecasting Chart -->
           <article class="research-card">
             <div class="research-card-header">
               <div class="research-badge-row">
@@ -245,6 +287,18 @@
             <p class="research-summary">
               A comprehensive comparative study on multi-step air pollution and PM2.5 forecasting over multivariate hourly pollutant and meteorological time-series datasets.
             </p>
+
+            <!-- Interactive BiLSTM Multi-Step Forecasting Canvas -->
+            <div class="forecast-chart-container">
+              <canvas id="aqi-forecast-canvas"></canvas>
+            </div>
+
+            <div style="display: flex; gap: 0.5rem; margin-bottom: 1.25rem; flex-wrap: wrap;">
+              <span class="mono" style="font-size: 0.75rem; color: var(--text-muted); align-self: center;">Pollutant Stream:</span>
+              <button class="tag-badge active" data-pollutant="pm25" style="cursor: pointer;">PM2.5 (Fine Particulate)</button>
+              <button class="tag-badge" data-pollutant="pm10" style="cursor: pointer;">PM10 (Coarse)</button>
+              <button class="tag-badge" data-pollutant="no2" style="cursor: pointer;">NO2 (Nitrogen Dioxide)</button>
+            </div>
 
             <ul class="research-details-list">
               <li class="research-detail-item">
@@ -326,7 +380,7 @@
                 Founded an independent mobile development studio. Managed full product lifecycles: ideation, Flutter architecture, Firebase realtime integration, ASO optimization, and Google Play Store distribution.
               </p>
               <div class="product-metrics-tag">
-                <i data-lucide="download-cloud" style="width: 14px; height: 14px; color: var(--accent-cyan);"></i>
+                <i data-lucide="download-cloud" style="width: 14px; height: 14px; color: var(--accent-emerald);"></i>
                 <span>1,000+ Downloads on Google Play across 3 live apps</span>
               </div>
               <div style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.6;">
@@ -355,7 +409,7 @@
                 Real-time numerical astrophysics and computer graphics simulation modeling relativistic gravitational lensing, Kerr black hole accretion discs, relativistic plasma jets, and Hawking radiation.
               </p>
               <div class="product-metrics-tag">
-                <i data-lucide="cpu" style="width: 14px; height: 14px; color: var(--accent-cyan);"></i>
+                <i data-lucide="cpu" style="width: 14px; height: 14px; color: var(--accent-emerald);"></i>
                 <span>27 Custom GLSL Shaders · 30,000 Particle Physics System</span>
               </div>
               <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.6;">
@@ -384,7 +438,7 @@
                 Document-level semantic comparison platform utilizing contextual transformer embeddings and cosine similarity to identify paraphrased and translated textual overlaps beyond raw n-gram matching.
               </p>
               <div class="product-metrics-tag">
-                <i data-lucide="layers" style="width: 14px; height: 14px; color: var(--accent-cyan);"></i>
+                <i data-lucide="layers" style="width: 14px; height: 14px; color: var(--accent-emerald);"></i>
                 <span>Semantic Embeddings &amp; High-Throughput REST API</span>
               </div>
               <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.6;">
@@ -413,7 +467,7 @@
                 Interactive cybersecurity learning and vulnerability sandbox platform. Designed to demonstrate offensive attack vectors (XSS, SQLi, CSRF) alongside defense-in-depth secure coding mitigations.
               </p>
               <div class="product-metrics-tag">
-                <i data-lucide="shield-check" style="width: 14px; height: 14px; color: var(--accent-cyan);"></i>
+                <i data-lucide="shield-check" style="width: 14px; height: 14px; color: var(--accent-emerald);"></i>
                 <span>Interactive Vulnerability Sandbox &amp; Verification Labs</span>
               </div>
               <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.6;">
@@ -428,7 +482,7 @@
                 <span class="tag-badge">Tailwind</span>
               </div>
               <div class="product-links">
-                <a href="https://cyber-learn-three.vercel.app" target="_blank" rel="noopener noreferrer" class="link-item" style="color: var(--accent-cyan);">
+                <a href="https://cyber-learn-three.vercel.app" target="_blank" rel="noopener noreferrer" class="link-item" style="color: var(--accent-emerald);">
                   <i data-lucide="external-link" style="width: 15px; height: 15px;"></i> Live Demo
                 </a>
                 <a href="https://github.com/raihan12121/CyberLearn" target="_blank" rel="noopener noreferrer" class="link-item">
@@ -569,7 +623,7 @@
               <span>Programming Languages</span>
             </h3>
             <div class="skill-items-list">
-              <span class="skill-pill" style="color: var(--accent-cyan);">Python (Primary)</span>
+              <span class="skill-pill" style="color: var(--accent-emerald);">Python (Primary)</span>
               <span class="skill-pill">Dart</span>
               <span class="skill-pill">Java</span>
               <span class="skill-pill">C++ / C</span>
@@ -629,7 +683,7 @@
           <!-- Experience Column -->
           <div>
             <h3 class="timeline-column-title">
-              <i data-lucide="briefcase" style="color: var(--accent-cyan);"></i>
+              <i data-lucide="briefcase" style="color: var(--accent-emerald);"></i>
               <span>Work Experience</span>
             </h3>
             <div class="timeline-list">
@@ -647,7 +701,7 @@
           <!-- Education Column -->
           <div>
             <h3 class="timeline-column-title">
-              <i data-lucide="graduation-cap" style="color: var(--accent-cyan);"></i>
+              <i data-lucide="graduation-cap" style="color: var(--accent-emerald);"></i>
               <span>Education</span>
             </h3>
             <div class="timeline-list">
@@ -692,7 +746,7 @@
 
               <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
                 <a href="mailto:mdraihan2328@gmail.com" class="btn btn-primary">
-                  <i data-lucide="mail" style="width: 16px; height: 16px;"></i> Send Direct Email
+                  <i data-lucide="mail" style="width: 16px; height: 16px; color: var(--accent-emerald);"></i> Send Direct Email
                 </a>
                 <a href="Muhammad Raihan Molla-CV.pdf" target="_blank" class="btn btn-accent" download>
                   <i data-lucide="file-down" style="width: 16px; height: 16px;"></i> Download Full CV (PDF)
@@ -794,6 +848,7 @@
 
   <!-- Scripts -->
   <script src="js/incursion-canvas.js"></script>
+  <script src="js/advanced-labs.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
