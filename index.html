@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Raihan Molla | AI & Systems Developer Portfolio</title>
+  
+  <!-- Meta & SEO -->
+  <meta name="description" content="Portfolio of Muhammad Raihan Molla - AI & Machine Learning Engineer, Systems & Local LLM Architect in Rust/Python, Full-Stack Developer, and Competitive Programmer.">
+  <meta name="keywords" content="Muhammad Raihan Molla, AI Engineer, Machine Learning, Rust Developer, Local LLM Inference, RAG, ChromaDB, PyTorch, Next.js, CyberLearn, BUBT">
+  <meta name="author" content="Muhammad Raihan Molla">
+  
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Muhammad Raihan Molla | AI & Systems Developer">
+  <meta property="og:description" content="AI & Machine Learning Engineer | Systems Developer (Rust/Python) | Temporal RAG & Local LLM Inference Engines.">
+  <meta property="og:url" content="https://raihan12121.github.io/Portfolio/">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/101105519?v=4">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Muhammad Raihan Molla | AI & Systems Developer">
+  <meta name="twitter:description" content="Building intelligent systems, local LLM inference engines in Rust, and advanced temporal RAG architectures.">
+  <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/101105519?v=4">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Interactive Background Canvas & Ambient Glow -->
+  <canvas id="particle-canvas"></canvas>
+  <div class="ambient-glow"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar-wrapper">
+    <div class="container navbar">
+      <a href="#home" class="nav-brand">
+        <span class="nav-brand-bracket">&lt;</span>MRM <span class="nav-brand-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#playground" class="nav-link">AI Playground</a>
+        <a href="#problem-solving" class="nav-link">Algorithms</a>
+        <a href="#journey" class="nav-link">Journey</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Terminal Trigger Button -->
+        <button class="terminal-trigger-btn open-terminal-btn" title="Open Interactive Developer Terminal">
+          <i data-lucide="terminal" style="width: 15px; height: 15px;"></i>
+          <span>CLI</span>
+          <span class="kbd-badge">Ctrl+K</span>
+        </button>
+
+        <!-- Palette Theme Switcher -->
+        <div class="palette-switcher-wrap">
+          <button class="theme-menu-btn" id="theme-menu-btn" title="Change Theme Accent" aria-label="Change Theme Accent">
+            <i data-lucide="palette" style="width: 17px; height: 17px;"></i>
+          </button>
+          <div class="palette-dropdown" id="palette-dropdown">
+            <div class="palette-option" data-theme-value="cyan">
+              <span class="palette-dot" style="background: #00f0ff;"></span>
+              <span>Cyber Cyan</span>
+            </div>
+            <div class="palette-option" data-theme-value="emerald">
+              <span class="palette-dot" style="background: #10b981;"></span>
+              <span>Matrix Emerald</span>
+            </div>
+            <div class="palette-option" data-theme-value="purple">
+              <span class="palette-dot" style="background: #a855f7;"></span>
+              <span>Neural Purple</span>
+            </div>
+            <div class="palette-option" data-theme-value="amber">
+              <span class="palette-dot" style="background: #f59e0b;"></span>
+              <span>Solar Amber</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-drawer">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#playground" class="nav-link">AI Playground</a>
+    <a href="#problem-solving" class="nav-link">Algorithms</a>
+    <a href="#journey" class="nav-link">Journey</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <button class="btn btn-primary open-terminal-btn" style="width: 100%; margin-top: 1rem;">
+      <i data-lucide="terminal" style="width: 16px; height: 16px;"></i> Launch Terminal (CLI)
+    </button>
+  </div>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="status-dot"></span>
+            <span>Available for AI/ML & Systems Engineering</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <br>
+            <span class="gradient-text">Muhammad Raihan</span>
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span class="mono">&gt;</span>
+            <span id="typewriter-text"></span>
+            <span class="typing-cursor"></span>
+          </div>
+
+          <p class="hero-bio">
+            Undergraduate Computer Science & Engineering researcher at <strong>BUBT</strong>. Architecting high-performance local LLM engines in <strong>Rust</strong>, temporal knowledge graph <strong>RAG</strong> frameworks in <strong>Python</strong>, and intelligent full-stack platforms.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i data-lucide="sparkles" style="width: 18px; height: 18px;"></i>
+              Explore Projects
+            </a>
+            <button class="btn btn-secondary open-terminal-btn">
+              <i data-lucide="terminal" style="width: 18px; height: 18px;"></i>
+              Terminal Mode <span class="kbd-badge" style="margin-left: 4px;">Ctrl+K</span>
+            </button>
+            <a href="#contact" class="btn btn-secondary">
+              <i data-lucide="send" style="width: 18px; height: 18px;"></i>
+              Get in Touch
+            </a>
+          </div>
+
+          <!-- Quick Socials -->
+          <div class="hero-socials">
+            <a href="https://github.com/raihan12121" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">
+              <i data-lucide="github" style="width: 18px; height: 18px;"></i>
+            </a>
+            <a href="https://linkedin.com/in/raihanx009" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">
+              <i data-lucide="linkedin" style="width: 18px; height: 18px;"></i>
+            </a>
+            <a href="https://leetcode.com/raihan009" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LeetCode (raihan009)">
+              <i data-lucide="code-2" style="width: 18px; height: 18px;"></i>
+            </a>
+            <a href="https://codeforces.com/profile/raihan12121" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Codeforces (raihan12121)">
+              <i data-lucide="cpu" style="width: 18px; height: 18px;"></i>
+            </a>
+            <a href="https://youtube.com/@raihan-the-panda" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="YouTube">
+              <i data-lucide="youtube" style="width: 18px; height: 18px;"></i>
+            </a>
+            <a href="mailto:mdraihan2328@gmail.com" class="social-icon-btn" title="Direct Email">
+              <i data-lucide="mail" style="width: 18px; height: 18px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual Code Window -->
+        <div class="hero-visual">
+          <div class="code-window">
+            <div class="code-header">
+              <div class="code-dots">
+                <span class="code-dot dot-red"></span>
+                <span class="code-dot dot-yellow"></span>
+                <span class="code-dot dot-green"></span>
+              </div>
+              <span class="code-tab-title">self_route_engine.rs</span>
+              <span class="code-badge">Rust 2024</span>
+            </div>
+            <pre class="code-body"><code><span class="syntax-keyword">pub struct</span> <span class="syntax-type">LocalLLMEngine</span> {
+    <span class="syntax-comment">// Local GPU/CPU tensor compute pipeline</span>
+    <span class="syntax-type">model_path</span>: <span class="syntax-type">PathBuf</span>,
+    <span class="syntax-type">quantization</span>: <span class="syntax-type">QuantScheme::Q4_K_M</span>,
+    <span class="syntax-type">context_window</span>: <span class="syntax-type">usize</span>,
+    <span class="syntax-type">hardware_accel</span>: <span class="syntax-type">HardwareTarget::VulkanCuda</span>,
+}
+
+<span class="syntax-keyword">impl</span> <span class="syntax-type">LocalLLMEngine</span> {
+    <span class="syntax-keyword">pub async fn</span> <span class="syntax-fn">stream_inference</span>(&amp;<span class="syntax-keyword">self</span>, prompt: &amp;<span class="syntax-type">str</span>) 
+        -&gt; <span class="syntax-type">Result</span>&lt;<span class="syntax-type">InferenceStream</span>, <span class="syntax-type">EngineError</span>&gt; {
+        <span class="syntax-comment">// Zero external API calls • Pure local execution</span>
+        <span class="syntax-keyword">let</span> tokens = <span class="syntax-keyword">self</span>.<span class="syntax-fn">tokenize</span>(prompt)?;
+        <span class="syntax-keyword">self</span>.<span class="syntax-fn">execute_forward_pass</span>(tokens).<span class="syntax-keyword">await</span>
+    }
+}</code></pre>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-metric-card metric-1">
+            <div class="metric-icon">
+              <i data-lucide="git-branch" style="width: 20px; height: 20px;"></i>
+            </div>
+            <div class="metric-info">
+              <h4>16+ Repositories</h4>
+              <p>Active Open Source</p>
+            </div>
+          </div>
+
+          <div class="floating-metric-card metric-2">
+            <div class="metric-icon">
+              <i data-lucide="award" style="width: 20px; height: 20px;"></i>
+            </div>
+            <div class="metric-info">
+              <h4>500+ Solved</h4>
+              <p>LeetCode & CP Problems</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Identity & Focus</span>
+          <h2 class="section-title">Architecting Intelligence & High-Performance Systems</h2>
+          <p class="section-subtitle">Bridging mathematical machine learning with low-level systems programming.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card-visual">
+            <div class="about-avatar-row">
+              <div class="avatar-img-wrapper">
+                <img src="https://avatars.githubusercontent.com/u/101105519?v=4" alt="Muhammad Raihan Molla" class="avatar-img">
+              </div>
+              <div class="avatar-details">
+                <h3>Muhammad Raihan Molla</h3>
+                <p>AI / ML & Systems Engineer</p>
+              </div>
+            </div>
+
+            <div class="about-info-list">
+              <div class="info-item">
+                <i data-lucide="graduation-cap" class="info-item-icon" style="width: 18px; height: 18px;"></i>
+                <div>
+                  <strong style="color: #f8fafc;">B.Sc. in Computer Science & Engineering</strong>
+                  <div>Bangladesh University of Business and Technology (BUBT)</div>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i data-lucide="map-pin" class="info-item-icon" style="width: 18px; height: 18px;"></i>
+                <div>
+                  <strong style="color: #f8fafc;">Location</strong>
+                  <div>Mirpur, Dhaka, Bangladesh</div>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i data-lucide="layers" class="info-item-icon" style="width: 18px; height: 18px;"></i>
+                <div>
+                  <strong style="color: #f8fafc;">Core Research Interests</strong>
+                  <div>Local LLM Acceleration, Temporal Graph RAG, Computer Vision, Cybersecurity</div>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i data-lucide="sparkles" class="info-item-icon" style="width: 18px; height: 18px;"></i>
+                <div>
+                  <strong style="color: #f8fafc;">Motto</strong>
+                  <div class="mono" style="color: var(--primary-accent);">"Code. Train. Build Impact."</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text-content">
+            <p>
+              I am a software engineer and AI researcher passionate about developing autonomous intelligent systems and high-throughput backends. My technical journey spans across deep learning architectures, computer vision, and building low-level systems in <strong>Rust</strong>, <strong>C++</strong>, and <strong>Python</strong>.
+            </p>
+            <p>
+              From engineering <strong>Self-Route</strong> (a standalone local LLM inference engine) and <strong>TERRA RAG</strong> (a multi-hop temporal graph retrieval framework), to crafting <strong>CyberLearn</strong> (an interactive cybersecurity platform), I focus on building software that is mathematically sound, blazingly fast, and impactful.
+            </p>
+            <p>
+              When not training models or profiling memory allocations, you will find me solving algorithmic challenges on LeetCode and Codeforces or exploring astrophysical simulations.
+            </p>
+
+            <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+              <a href="mailto:mdraihan2328@gmail.com" class="btn btn-primary" style="padding: 0.7rem 1.4rem;">
+                <i data-lucide="mail" style="width: 16px; height: 16px;"></i> Send Message
+              </a>
+              <button class="btn btn-secondary copy-email-btn" style="padding: 0.7rem 1.4rem;">
+                <i data-lucide="copy" style="width: 16px; height: 16px;"></i> Copy Email
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metric Stat Boxes -->
+        <div class="stats-counter-grid">
+          <div class="stat-box">
+            <div class="stat-number">16+</div>
+            <div class="stat-label">GitHub Repositories</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Algorithmic Problems Solved</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Major AI & Systems Architectures</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Dedication to Craft</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tech Universe</span>
+          <h2 class="section-title">Skills, Stacks & Tooling</h2>
+          <p class="section-subtitle">Proficiencies developed through real-world systems, research projects, and algorithmic practice.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-tabs-nav">
+          <button class="skill-tab-btn active" data-skill-tab="all">
+            <i data-lucide="grid" style="width: 16px; height: 16px;"></i> All Domains
+          </button>
+          <button class="skill-tab-btn" data-skill-tab="ai">
+            <i data-lucide="brain" style="width: 16px; height: 16px;"></i> AI & Machine Learning
+          </button>
+          <button class="skill-tab-btn" data-skill-tab="systems">
+            <i data-lucide="cpu" style="width: 16px; height: 16px;"></i> Languages & Systems
+          </button>
+          <button class="skill-tab-btn" data-skill-tab="web">
+            <i data-lucide="globe" style="width: 16px; height: 16px;"></i> Web & Full-Stack
+          </button>
+          <button class="skill-tab-btn" data-skill-tab="tools">
+            <i data-lucide="wrench" style="width: 16px; height: 16px;"></i> Platforms & Tools
+          </button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-cards-grid">
+          <!-- Card 1: PyTorch & Deep Learning -->
+          <div class="skill-card" data-skill-group="ai">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">🔥</div>
+              <span class="skill-badge-tag">Advanced</span>
+            </div>
+            <h4>PyTorch & Deep Learning</h4>
+            <p>CNNs, Vision Transformers, transfer learning, Grad-CAM interpretability, and medical image segmentation.</p>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+          </div>
+
+          <!-- Card 2: RAG & Knowledge Graphs -->
+          <div class="skill-card" data-skill-group="ai">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">🧠</div>
+              <span class="skill-badge-tag">Specialized</span>
+            </div>
+            <h4>RAG & Knowledge Graphs</h4>
+            <p>ChromaDB vector retrieval, multi-hop reasoning, temporal graph indexing, and prompt engineering pipelines.</p>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+          </div>
+
+          <!-- Card 3: Rust Systems Programming -->
+          <div class="skill-card" data-skill-group="systems">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">⚙️</div>
+              <span class="skill-badge-tag">Systems</span>
+            </div>
+            <h4>Rust</h4>
+            <p>High-concurrency async servers (Tokio), low-level memory safety, local LLM inference engines, and custom APIs.</p>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+          </div>
+
+          <!-- Card 4: Python & Scientific Computing -->
+          <div class="skill-card" data-skill-group="systems">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">🐍</div>
+              <span class="skill-badge-tag">Expert</span>
+            </div>
+            <h4>Python</h4>
+            <p>NumPy numerical computing, Pandas data analysis, Scikit-Learn pipelines, OpenCV image processing, Matplotlib.</p>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+          </div>
+
+          <!-- Card 5: C++ & Problem Solving -->
+          <div class="skill-card" data-skill-group="systems">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">⚡</div>
+              <span class="skill-badge-tag">Core CS</span>
+            </div>
+            <h4>C++ / C</h4>
+            <p>Object-Oriented Programming, competitive programming, advanced data structures, graph traversals, and dynamic programming.</p>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+          </div>
+
+          <!-- Card 6: Next.js & React -->
+          <div class="skill-card" data-skill-group="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">⚛️</div>
+              <span class="skill-badge-tag">Modern Web</span>
+            </div>
+            <h4>Next.js & React</h4>
+            <p>App Router, server/client components, TypeScript typing, responsive interactive UI, state management, and Tailwind CSS.</p>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+          </div>
+
+          <!-- Card 7: TypeScript & JavaScript -->
+          <div class="skill-card" data-skill-group="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">📘</div>
+              <span class="skill-badge-tag">Full-Stack</span>
+            </div>
+            <h4>TypeScript & Node.js</h4>
+            <p>Type-safe REST API backends, Electron desktop software, asynchronous event handling, and modern ES6+ standards.</p>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+          </div>
+
+          <!-- Card 8: Android Development (Java) -->
+          <div class="skill-card" data-skill-group="systems">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">📱</div>
+              <span class="skill-badge-tag">Mobile</span>
+            </div>
+            <h4>Java & Android Studio</h4>
+            <p>Native Android application development, Material Design UI, SQLite persistence, and real-time networking.</p>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+          </div>
+
+          <!-- Card 9: Computer Vision & OpenCV -->
+          <div class="skill-card" data-skill-group="ai">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">👁️</div>
+              <span class="skill-badge-tag">Vision AI</span>
+            </div>
+            <h4>Computer Vision & OpenCV</h4>
+            <p>Edge detection, spatial filtering, feature extraction, medical X-ray enhancement, and object classification.</p>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+          </div>
+
+          <!-- Card 10: DevOps, Linux & Git -->
+          <div class="skill-card" data-skill-group="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">🐧</div>
+              <span class="skill-badge-tag">DevOps</span>
+            </div>
+            <h4>Linux, Git & Vercel</h4>
+            <p>Bash scripting, WSL environment, Git version control, CI/CD automated deployments, and Docker containers.</p>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+          </div>
+
+          <!-- Card 11: Cybersecurity Foundations -->
+          <div class="skill-card" data-skill-group="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">🛡️</div>
+              <span class="skill-badge-tag">Security</span>
+            </div>
+            <h4>Web Security & Defense</h4>
+            <p>OWASP Top 10 mitigation, auth tokens, input sanitization, CSRF defense, and secure coding practices.</p>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 82%;"></div></div>
+          </div>
+
+          <!-- Card 12: UI/UX & Design Tools -->
+          <div class="skill-card" data-skill-group="tools">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap">🎨</div>
+              <span class="skill-badge-tag">Creative</span>
+            </div>
+            <h4>Adobe Illustrator & Photoshop</h4>
+            <p>Vector asset design, technical architecture diagramming, UI mockup styling, and digital asset branding.</p>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 84%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECTS SECTION ==================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Engineering Portfolio</span>
+          <h2 class="section-title">Featured Works & Open Source</h2>
+          <p class="section-subtitle">Real-world AI architectures, low-level inference engines, and production web platforms.</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="projects-filter-bar">
+          <button class="project-filter-btn active" data-filter="all">All Projects</button>
+          <button class="project-filter-btn" data-filter="systems">Systems & Rust</button>
+          <button class="project-filter-btn" data-filter="ai">AI & Machine Learning</button>
+          <button class="project-filter-btn" data-filter="web">Web & Security</button>
+          <button class="project-filter-btn" data-filter="sim">Simulations & Desktop</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- Project 1: Self-Route -->
+          <div class="project-card" data-category="systems">
+            <div class="project-banner">
+              <span class="project-visual-icon">⚡</span>
+              <span class="project-tag-pill">Rust Systems Engine</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Self-Route (SelfAPI)</h3>
+              <p class="project-desc">
+                High-performance local LLM inference engine and API gateway in Rust. Run models directly on CPU/GPU and expose secure OpenAI-compatible endpoints with zero subscriptions or external cloud dependency.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Rust</span>
+                <span class="tech-tag">LLM Inference</span>
+                <span class="tech-tag">Quantization</span>
+                <span class="tech-tag">API Gateway</span>
+              </div>
+              <div class="project-footer-links">
+                <a href="https://github.com/raihan12121/Self-Route" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  <i data-lucide="github" style="width: 16px; height: 16px;"></i> Repository
+                </a>
+                <button class="btn-details-modal" data-project-id="self-route">
+                  Architecture & Details <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: TERRA RAG -->
+          <div class="project-card" data-category="ai">
+            <div class="project-banner">
+              <span class="project-visual-icon">🧠</span>
+              <span class="project-tag-pill">Advanced AI / RAG</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">TERRA: Temporal Reasoning RAG</h3>
+              <p class="project-desc">
+                Advanced RAG framework for temporal graph analytics, multi-hop reasoning-trace indexation, and automated LLM evaluation. Combines dense vector retrieval (ChromaDB) with topological knowledge graph reasoning.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">ChromaDB</span>
+                <span class="tech-tag">Knowledge Graphs</span>
+                <span class="tech-tag">NLP</span>
+              </div>
+              <div class="project-footer-links">
+                <a href="https://github.com/raihan12121/TERRA-Temporal-Evolution-and-Reasoning-Trace-RAG" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  <i data-lucide="github" style="width: 16px; height: 16px;"></i> Repository
+                </a>
+                <button class="btn-details-modal" data-project-id="terra-rag">
+                  Architecture & Details <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: CyberLearn -->
+          <div class="project-card" data-category="web">
+            <div class="project-banner">
+              <span class="project-visual-icon">🛡️</span>
+              <span class="project-tag-pill">Web Platform & Security</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">CyberLearn Platform</h3>
+              <p class="project-desc">
+                Interactive cybersecurity learning and vulnerability practicing platform. Provides guided hands-on sandbox labs for discovering vulnerabilities, inspecting exploit payloads, and learning secure defensive coding.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Tailwind CSS</span>
+              </div>
+              <div class="project-footer-links">
+                <a href="https://cyber-learn-three.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link-item" style="color: var(--primary-accent); font-weight: 600;">
+                  <i data-lucide="external-link" style="width: 16px; height: 16px;"></i> Live Demo
+                </a>
+                <a href="https://github.com/raihan12121/CyberLearn" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  <i data-lucide="github" style="width: 16px; height: 16px;"></i> Code
+                </a>
+                <button class="btn-details-modal" data-project-id="cyberlearn">
+                  Details <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: LungDx AI -->
+          <div class="project-card" data-category="ai">
+            <div class="project-banner">
+              <span class="project-visual-icon">🩻</span>
+              <span class="project-tag-pill">Medical AI / Computer Vision</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">LungDx Cancer Detection</h3>
+              <p class="project-desc">
+                Cross-platform AI diagnostic application designed to assist in early-stage detection and classification of lung cancer through deep convolutional analysis of chest X-ray scans.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">Computer Vision</span>
+                <span class="tech-tag">TypeScript</span>
+              </div>
+              <div class="project-footer-links">
+                <a href="https://github.com/raihan12121/Lung-Cancer-Detection" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  <i data-lucide="github" style="width: 16px; height: 16px;"></i> Repository
+                </a>
+                <button class="btn-details-modal" data-project-id="lung-dx">
+                  Architecture & Details <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Incursion Simulation -->
+          <div class="project-card" data-category="sim">
+            <div class="project-banner">
+              <span class="project-visual-icon">🌌</span>
+              <span class="project-tag-pill">Astrophysics Simulation</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Incursion: Black Hole & Big Bang</h3>
+              <p class="project-desc">
+                Scientific numerical simulation modeling relativistic Black Hole gravitational lensing effects, photon accretion spheres, and Big Bang cosmic inflation physics.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Physics</span>
+                <span class="tech-tag">Scientific Computing</span>
+              </div>
+              <div class="project-footer-links">
+                <a href="https://github.com/raihan12121/Incursion-A-Blackhole-effect-and-BigBang-simulation" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  <i data-lucide="github" style="width: 16px; height: 16px;"></i> Repository
+                </a>
+                <button class="btn-details-modal" data-project-id="incursion">
+                  Details <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: PC Cleaner Desktop -->
+          <div class="project-card" data-category="sim">
+            <div class="project-banner">
+              <span class="project-visual-icon">🧹</span>
+              <span class="project-tag-pill">Desktop System Utility</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">PC Cleaner Desktop App</h3>
+              <p class="project-desc">
+                Lightweight, high-performance desktop application for Windows disk optimization, registry hygiene, and junk cache elimination built with TypeScript and Electron.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Electron</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Desktop</span>
+              </div>
+              <div class="project-footer-links">
+                <a href="https://github.com/raihan12121/PC-Cleaner-Desktop-App" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  <i data-lucide="github" style="width: 16px; height: 16px;"></i> Repository
+                </a>
+                <button class="btn-details-modal" data-project-id="pc-cleaner">
+                  Details <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7: MessageMe Android -->
+          <div class="project-card" data-category="sim">
+            <div class="project-banner">
+              <span class="project-visual-icon">💬</span>
+              <span class="project-tag-pill">Mobile Application</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">MessageMe Android App</h3>
+              <p class="project-desc">
+                Native messaging application for the Android platform featuring real-time message sync, clean Material UI, and offline SQLite storage.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Android SDK</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">Mobile UI</span>
+              </div>
+              <div class="project-footer-links">
+                <a href="https://github.com/raihan12121/MessageMe--A-Messaging-Application-for-Android-Platform" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  <i data-lucide="github" style="width: 16px; height: 16px;"></i> Repository
+                </a>
+                <button class="btn-details-modal" data-project-id="messageme">
+                  Details <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8: Air Pollution Prediction -->
+          <div class="project-card" data-category="ai">
+            <div class="project-banner">
+              <span class="project-visual-icon">📈</span>
+              <span class="project-tag-pill">Machine Learning & Data</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Air Pollution Prediction</h3>
+              <p class="project-desc">
+                Time-series environmental analytics predicting Air Quality Index (AQI) and PM2.5 levels using multivariate regression and ensemble learning techniques.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-Learn</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Data Science</span>
+              </div>
+              <div class="project-footer-links">
+                <a href="https://github.com/raihan12121/Air-Polution-prediction" target="_blank" rel="noopener noreferrer" class="project-link-item">
+                  <i data-lucide="github" style="width: 16px; height: 16px;"></i> Repository
+                </a>
+                <button class="btn-details-modal" data-project-id="air-pollution">
+                  Details <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== INTERACTIVE AI PLAYGROUND ==================== -->
+    <section class="section" id="playground">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Laboratory</span>
+          <h2 class="section-title">Live RAG & Knowledge Graph Visualizer</h2>
+          <p class="section-subtitle">Test vector embedding similarity matching & multi-hop topological reasoning directly in your browser.</p>
+        </div>
+
+        <div class="playground-box">
+          <div class="playground-header">
+            <div>
+              <h3 style="font-size: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+                <i data-lucide="network" style="color: var(--primary-accent); width: 20px; height: 20px;"></i>
+                TERRA Vector & Topological Reasoning Simulator
+              </h3>
+              <p style="color: var(--text-secondary); font-size: 0.85rem;">Simulating ChromaDB dense retrieval + Multi-Hop Graph Walks</p>
+            </div>
+
+            <!-- Quick Query Presets -->
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+              <button class="sample-query-pill tech-tag" style="cursor: pointer;" data-query="Local LLM inference in Rust and hardware acceleration">⚡ Rust LLM Engine</button>
+              <button class="sample-query-pill tech-tag" style="cursor: pointer;" data-query="Temporal Knowledge Graph multi-hop reasoning in RAG">🧠 Temporal Graph RAG</button>
+              <button class="sample-query-pill tech-tag" style="cursor: pointer;" data-query="Chest X-Ray lung cancer detection with PyTorch">🩻 LungDx Vision</button>
+              <button class="sample-query-pill tech-tag" style="cursor: pointer;" data-query="Interactive cybersecurity learning platform">🛡️ CyberLearn</button>
+            </div>
+          </div>
+
+          <!-- Input Bar -->
+          <div class="playground-query-bar">
+            <input type="text" class="playground-input" id="rag-query-input" value="How does local LLM inference work in Rust with Self-Route?" placeholder="Enter an AI query or research topic...">
+            <button class="btn btn-primary" id="btn-run-rag" style="padding: 0.85rem 1.4rem;">
+              <i data-lucide="play" style="width: 16px; height: 16px;"></i> Run Reasoning
+            </button>
+          </div>
+
+          <!-- Dual Panel View -->
+          <div class="playground-grid-view">
+            <!-- Left: Vector Similarity Scores -->
+            <div class="playground-panel">
+              <div class="playground-panel-title">
+                <span>Vector Matches (ChromaDB Top-K)</span>
+                <span class="mono" style="color: var(--primary-accent); font-size: 0.75rem;">Cosine Similarity</span>
+              </div>
+              <div class="retrieval-results-list" id="rag-results-list">
+                <!-- Dynamically filled by playground.js -->
+              </div>
+            </div>
+
+            <!-- Right: Knowledge Graph Canvas -->
+            <div class="playground-panel">
+              <div class="playground-panel-title">
+                <span>Topological Multi-Hop Graph Trace</span>
+                <span class="mono" style="color: #34d399; font-size: 0.75rem;">Active Graph Nodes</span>
+              </div>
+              <canvas id="graph-visualizer-canvas"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== COMPETITIVE PROGRAMMING ==================== -->
+    <section class="section" id="problem-solving">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core CS & Algorithms</span>
+          <h2 class="section-title">Problem Solving & Competitive Programming</h2>
+          <p class="section-subtitle">Consistent practice in data structures, graph algorithms, and dynamic programming.</p>
+        </div>
+
+        <div class="cp-grid">
+          <!-- LeetCode -->
+          <div class="cp-card">
+            <div class="cp-logo-wrap" style="color: #ffa116;">
+              <i data-lucide="code-2" style="width: 32px; height: 32px;"></i>
+            </div>
+            <h4>LeetCode</h4>
+            <div class="cp-handle">@raihan009</div>
+            <div class="cp-stats-pill">Algorithms & Data Structures</div>
+            <a href="https://leetcode.com/raihan009" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%; font-size: 0.85rem; padding: 0.55rem 1rem;">
+              View Profile <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
+            </a>
+          </div>
+
+          <!-- Codeforces -->
+          <div class="cp-card">
+            <div class="cp-logo-wrap" style="color: #1f8acb;">
+              <i data-lucide="cpu" style="width: 32px; height: 32px;"></i>
+            </div>
+            <h4>Codeforces</h4>
+            <div class="cp-handle">@raihan12121</div>
+            <div class="cp-stats-pill">Competitive Rounds & Contests</div>
+            <a href="https://codeforces.com/profile/raihan12121" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%; font-size: 0.85rem; padding: 0.55rem 1rem;">
+              View Profile <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
+            </a>
+          </div>
+
+          <!-- HackerRank -->
+          <div class="cp-card">
+            <div class="cp-logo-wrap" style="color: #2ec866;">
+              <i data-lucide="terminal" style="width: 32px; height: 32px;"></i>
+            </div>
+            <h4>HackerRank</h4>
+            <div class="cp-handle">@mdraihan2328</div>
+            <div class="cp-stats-pill">Problem Solving & Python</div>
+            <a href="https://hackerrank.com/mdraihan2328" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%; font-size: 0.85rem; padding: 0.55rem 1rem;">
+              View Profile <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
+            </a>
+          </div>
+
+          <!-- Beecrowd / URI -->
+          <div class="cp-card">
+            <div class="cp-logo-wrap" style="color: #ea1d2c;">
+              <i data-lucide="binary" style="width: 32px; height: 32px;"></i>
+            </div>
+            <h4>Beecrowd (URI)</h4>
+            <div class="cp-handle">Problem Solving Repo</div>
+            <div class="cp-stats-pill">C++ & Classical Algorithms</div>
+            <a href="https://github.com/raihan12121/Beecrowd-Problem-Solving" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%; font-size: 0.85rem; padding: 0.55rem 1rem;">
+              View Repo <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== JOURNEY & EDUCATION ==================== -->
+    <section class="section" id="journey">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Milestones</span>
+          <h2 class="section-title">Academic & Engineering Journey</h2>
+          <p class="section-subtitle">Chronological progression of education, research focus, and project milestones.</p>
+        </div>
+
+        <div class="timeline-wrap">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"><div class="timeline-marker-inner"></div></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2024 - Present</div>
+              <h4>Local LLM Engines & Temporal Graph Research</h4>
+              <div class="timeline-subtitle">Open Source & Independent Systems Engineering</div>
+              <p>Designed and built <strong>Self-Route (SelfAPI)</strong> in Rust for local model execution without cloud reliance. Created <strong>TERRA RAG</strong> combining ChromaDB vector retrieval with topological temporal graph reasoning.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"><div class="timeline-marker-inner"></div></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2023 - 2024</div>
+              <h4>CyberLearn & Diagnostic Medical AI (LungDx)</h4>
+              <div class="timeline-subtitle">Full-Stack Application & Computer Vision</div>
+              <p>Launched <strong>CyberLearn</strong> (Next.js/React cybersecurity interactive sandbox) and trained deep vision models in PyTorch for chest X-ray cancer diagnostics (<strong>LungDx</strong>).</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"><div class="timeline-marker-inner"></div></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2022 - Present</div>
+              <h4>B.Sc. in Computer Science and Engineering</h4>
+              <div class="timeline-subtitle">Bangladesh University of Business and Technology (BUBT)</div>
+              <p>Undergraduate studies focusing on Algorithms, Data Structures, Machine Learning, Operating Systems, Database Management Systems, and Object-Oriented Software Engineering.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something Impactful</h2>
+          <p class="section-subtitle">Have a project, research collaboration, or engineering role? Reach out directly!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info Column -->
+          <div class="contact-info-col">
+            <div class="contact-card-item">
+              <div class="contact-icon-box">
+                <i data-lucide="mail"></i>
+              </div>
+              <div class="contact-text-box">
+                <h4>Direct Email</h4>
+                <p>mdraihan2328@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-icon-box">
+                <i data-lucide="linkedin"></i>
+              </div>
+              <div class="contact-text-box">
+                <h4>LinkedIn Network</h4>
+                <p>linkedin.com/in/raihanx009</p>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-icon-box">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <div class="contact-text-box">
+                <h4>Location</h4>
+                <p>Mirpur, Dhaka, Bangladesh</p>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-icon-box">
+                <i data-lucide="terminal"></i>
+              </div>
+              <div class="contact-text-box">
+                <h4>Terminal Mode</h4>
+                <p>Press <span class="kbd-badge">Ctrl+K</span> to interact via CLI</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Morgan" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Your Email</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="alex@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject</label>
+              <input type="text" id="contact-subject" class="form-input" placeholder="AI Collaboration / Project Opportunity" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Hello Raihan, I would love to discuss..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+              <i data-lucide="send" style="width: 18px; height: 18px;"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Muhammad Raihan Molla</h3>
+          <p>AI & Machine Learning Engineer | Systems Developer (Rust/C++)</p>
+        </div>
+
+        <div style="display: flex; gap: 1rem;">
+          <a href="https://github.com/raihan12121" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">
+            <i data-lucide="github" style="width: 18px; height: 18px;"></i>
+          </a>
+          <a href="https://linkedin.com/in/raihanx009" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">
+            <i data-lucide="linkedin" style="width: 18px; height: 18px;"></i>
+          </a>
+          <a href="https://leetcode.com/raihan009" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LeetCode">
+            <i data-lucide="code-2" style="width: 18px; height: 18px;"></i>
+          </a>
+          <a href="mailto:mdraihan2328@gmail.com" class="social-icon-btn" title="Email">
+            <i data-lucide="mail" style="width: 18px; height: 18px;"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          <span>© 2025 Muhammad Raihan Molla. Crafted with precision & clean code.</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1.5rem;">
+          <span class="mono" id="dhaka-clock" style="color: var(--primary-accent);">--:--:-- (Dhaka)</span>
+          <button class="back-to-top-btn" id="back-to-top" title="Back to Top" aria-label="Back to Top">
+            <i data-lucide="arrow-up" style="width: 18px; height: 18px;"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== DEVELOPER TERMINAL MODAL (Ctrl+K) ==================== -->
+  <div class="terminal-modal-overlay" id="terminal-modal">
+    <div class="terminal-modal">
+      <div class="terminal-topbar">
+        <div class="code-dots">
+          <span class="code-dot dot-red" id="terminal-close-btn" style="cursor: pointer;" title="Close"></span>
+          <span class="code-dot dot-yellow"></span>
+          <span class="code-dot dot-green"></span>
+        </div>
+        <span class="code-tab-title">raihan@portfolio: ~ (bash)</span>
+        <span class="code-badge">Interactive CLI</span>
+      </div>
+
+      <div class="terminal-screen" id="terminal-screen">
+        <div class="terminal-output" id="terminal-output">
+          <div class="terminal-line" style="color: var(--primary-accent); font-weight: 700;">
+            🚀 Muhammad Raihan Molla — Interactive Developer Terminal v2.4
+          </div>
+          <div class="terminal-line" style="color: #94a3b8;">
+            Type <span class="syntax-fn">'help'</span> to see all commands, or try <span class="syntax-fn">'skills'</span>, <span class="syntax-fn">'projects'</span>, <span class="syntax-fn">'about'</span>, <span class="syntax-fn">'theme emerald'</span>.
+          </div>
+          <div class="terminal-line" style="color: #64748b; font-size: 0.8rem;">
+            Shortcuts: Press [Esc] to exit, [Tab] to autocomplete, [&uarr;/&darr;] for history.
+          </div>
+        </div>
+
+        <div class="terminal-input-row">
+          <span class="terminal-prompt">raihan@dev:~$</span>
+          <input type="text" class="terminal-cmd-input" id="terminal-cmd-input" autocomplete="off" spellcheck="false" autofocus>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PROJECT DETAILS MODAL ==================== -->
+  <div class="project-modal-overlay" id="project-modal">
+    <div class="project-modal-container">
+      <button class="modal-close-btn" id="project-modal-close" aria-label="Close modal">
+        <i data-lucide="x" style="width: 20px; height: 20px;"></i>
+      </button>
+      <div id="project-modal-body">
+        <!-- Dynamically injected by main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/playground.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
