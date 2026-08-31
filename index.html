@@ -28,41 +28,43 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Stylesheet -->
+  <!-- Neomorphism Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- ==================== HEADER ==================== -->
   <header class="site-header">
-    <div class="container nav-container">
-      <a href="#home" class="brand-link">
-        <div class="brand-logo-badge">RM</div>
-        <div>
-          <span style="color: var(--text-primary);">Muhammad Raihan</span>
-          <span style="color: var(--text-muted); font-size: 0.85rem; font-weight: 400; margin-left: 4px;">Molla</span>
-        </div>
-      </a>
-
-      <!-- Desktop Navigation -->
-      <nav class="nav-menu">
-        <a href="#research" class="nav-link">Research &amp; Theses</a>
-        <a href="#products" class="nav-link">Systems &amp; Apps</a>
-        <a href="#vectors" class="nav-link">Research Vectors</a>
-        <a href="#skills" class="nav-link">Technical Stack</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
-
-      <!-- Nav Actions -->
-      <div class="nav-actions">
-        <a href="Muhammad Raihan Molla-CV.pdf" target="_blank" class="btn btn-secondary btn-resume-nav" download>
-          <i data-lucide="file-down" style="width: 15px; height: 15px;"></i>
-          <span>Curriculum Vitae</span>
+    <div class="container">
+      <div class="nav-container">
+        <a href="#home" class="brand-link">
+          <div class="brand-logo-badge">RM</div>
+          <div>
+            <span style="color: var(--text-primary);">Muhammad Raihan</span>
+            <span style="color: var(--text-muted); font-size: 0.85rem; font-weight: 400; margin-left: 4px;">Molla</span>
+          </div>
         </a>
-        <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle navigation">
-          <i data-lucide="menu" style="width: 20px; height: 20px;"></i>
-        </button>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-menu">
+          <a href="#research" class="nav-link">Research &amp; Theses</a>
+          <a href="#products" class="nav-link">Systems &amp; Apps</a>
+          <a href="#vectors" class="nav-link">Research Vectors</a>
+          <a href="#skills" class="nav-link">Technical Stack</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Nav Actions -->
+        <div class="nav-actions">
+          <a href="Muhammad Raihan Molla-CV.pdf" target="_blank" class="btn btn-secondary btn-resume-nav" download>
+            <i data-lucide="file-down" style="width: 15px; height: 15px;"></i>
+            <span>Curriculum Vitae</span>
+          </a>
+          <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle navigation">
+            <i data-lucide="menu" style="width: 20px; height: 20px;"></i>
+          </button>
+        </div>
       </div>
     </div>
   </header>
@@ -88,7 +90,9 @@
         <!-- Hero Left Column -->
         <div class="hero-content">
           <div class="hero-status-pill">
-            <span class="status-dot"></span>
+            <div class="status-dot-socket">
+              <span class="status-dot"></span>
+            </div>
             <span>B.Sc. CSE Researcher @ BUBT · Founder @ ARI Software Lab</span>
           </div>
 
@@ -117,28 +121,36 @@
             </a>
           </div>
 
-          <!-- Proof Numbers -->
+          <!-- Proof Numbers in Neomorphic Cards -->
           <div class="proof-numbers-grid">
             <div class="proof-card">
-              <div class="proof-val">1,000+</div>
+              <div class="proof-val-well">
+                <span class="proof-val">1,000+</span>
+              </div>
               <div class="proof-label">Google Play Downloads across 3 published apps</div>
             </div>
             <div class="proof-card">
-              <div class="proof-val">27</div>
+              <div class="proof-val-well">
+                <span class="proof-val">27</span>
+              </div>
               <div class="proof-label">Custom GLSL Shaders in 30k particle astrophysics simulation</div>
             </div>
             <div class="proof-card">
-              <div class="proof-val">3</div>
+              <div class="proof-val-well">
+                <span class="proof-val">3</span>
+              </div>
               <div class="proof-label">Benchmark Datasets evaluated for Deepfake Forensics</div>
             </div>
             <div class="proof-card">
-              <div class="proof-val">16+</div>
+              <div class="proof-val-well">
+                <span class="proof-val">16+</span>
+              </div>
               <div class="proof-label">Open-source repositories in AI, Systems &amp; CP</div>
             </div>
           </div>
         </div>
 
-        <!-- Hero Right Column: Interactive Research & Systems Lab Showcase -->
+        <!-- Hero Right Column: Neomorphic Lab Showcase -->
         <div class="hero-lab-card">
           <div class="lab-card-header">
             <div class="lab-tabs">
@@ -146,7 +158,7 @@
               <button class="lab-tab-btn" data-lab-tab="fft">🔬 FFT Forensics</button>
               <button class="lab-tab-btn" data-lab-tab="mobile">📱 ARI Mobile Lab</button>
             </div>
-            <span class="mono" style="font-size: 0.72rem; color: #10b981;">LIVE SIMULATION</span>
+            <span class="mono" style="font-size: 0.72rem; color: #10b981; font-weight: 600;">ACTIVE</span>
           </div>
 
           <div class="lab-canvas-container">
@@ -262,7 +274,7 @@
                 <span class="tag-badge accent">Medical Imaging</span>
                 <span class="tag-badge">Computer Vision</span>
               </div>
-              <span class="tag-badge" style="background: rgba(245, 158, 11, 0.1); border-color: rgba(245, 158, 11, 0.3); color: var(--accent-amber);">Ongoing Research</span>
+              <span class="tag-badge" style="color: var(--accent-amber);">Ongoing Research</span>
             </div>
 
             <h3 class="research-title">Lung Cancer Detection Using Deep Learning on CT Scans</h3>
@@ -441,49 +453,49 @@
 
         <div class="vectors-grid">
           <div class="vector-card">
-            <div class="vector-icon"><i data-lucide="shield-alert"></i></div>
+            <div class="vector-icon-socket"><i data-lucide="shield-alert"></i></div>
             <h4 class="vector-title">AI Safety &amp; Robustness</h4>
             <p class="vector-desc">Adversarial attack mitigation, out-of-distribution generalization, and reliability under domain shifts.</p>
           </div>
 
           <div class="vector-card">
-            <div class="vector-icon"><i data-lucide="scan-face"></i></div>
+            <div class="vector-icon-socket"><i data-lucide="scan-face"></i></div>
             <h4 class="vector-title">Deepfake Forensics</h4>
             <p class="vector-desc">Dual-stream spatial and FFT frequency domain analysis for synthetic media verification.</p>
           </div>
 
           <div class="vector-card">
-            <div class="vector-icon"><i data-lucide="microchip"></i></div>
+            <div class="vector-icon-socket"><i data-lucide="microchip"></i></div>
             <h4 class="vector-title">Edge AI &amp; Hardware</h4>
             <p class="vector-desc">Deploying quantized Hugging Face vision models on ESP32-CAM and resource-constrained edge devices.</p>
           </div>
 
           <div class="vector-card">
-            <div class="vector-icon"><i data-lucide="languages"></i></div>
+            <div class="vector-icon-socket"><i data-lucide="languages"></i></div>
             <h4 class="vector-title">Multilingual NLP</h4>
             <p class="vector-desc">Cross-lingual semantic representation, low-resource Bengali NLP, sequence modeling, and RAG pipelines.</p>
           </div>
 
           <div class="vector-card">
-            <div class="vector-icon"><i data-lucide="eye"></i></div>
+            <div class="vector-icon-socket"><i data-lucide="eye"></i></div>
             <h4 class="vector-title">Computer Vision</h4>
             <p class="vector-desc">Medical CT diagnostic models, object detection (YOLO), feature extraction, and Vision Transformers (ViT).</p>
           </div>
 
           <div class="vector-card">
-            <div class="vector-icon"><i data-lucide="bot"></i></div>
+            <div class="vector-icon-socket"><i data-lucide="bot"></i></div>
             <h4 class="vector-title">LLM Agent Systems</h4>
             <p class="vector-desc">ChromaDB vector retrieval, tool-augmented agents, prompt engineering, and structured RAG reasoning.</p>
           </div>
 
           <div class="vector-card">
-            <div class="vector-icon"><i data-lucide="sparkles"></i></div>
+            <div class="vector-icon-socket"><i data-lucide="sparkles"></i></div>
             <h4 class="vector-title">Mechanistic Interpretability</h4>
             <p class="vector-desc">Probing internal neural activations, attention maps, and feature attribution in deep vision models.</p>
           </div>
 
           <div class="vector-card">
-            <div class="vector-icon"><i data-lucide="orbit"></i></div>
+            <div class="vector-icon-socket"><i data-lucide="orbit"></i></div>
             <h4 class="vector-title">Graphics &amp; Simulation</h4>
             <p class="vector-desc">OpenGL and custom GLSL fragment shaders for relativistic astrophysical and particle physics modeling.</p>
           </div>
@@ -557,7 +569,7 @@
               <span>Programming Languages</span>
             </h3>
             <div class="skill-items-list">
-              <span class="skill-pill" style="border-color: rgba(56, 189, 248, 0.4); color: var(--accent-cyan);">Python (Primary)</span>
+              <span class="skill-pill" style="color: var(--accent-cyan);">Python (Primary)</span>
               <span class="skill-pill">Dart</span>
               <span class="skill-pill">Java</span>
               <span class="skill-pill">C++ / C</span>
@@ -621,9 +633,8 @@
               <span>Work Experience</span>
             </h3>
             <div class="timeline-list">
-              <div class="timeline-node">
-                <div class="timeline-bullet"></div>
-                <div class="timeline-period">2025 – Present</div>
+              <div class="timeline-card">
+                <span class="timeline-period-badge">2025 – Present</span>
                 <h4 class="timeline-role">Founder &amp; Lead Developer</h4>
                 <div class="timeline-company">ARI Software Lab · Independent Studio</div>
                 <p class="timeline-desc">
@@ -640,9 +651,8 @@
               <span>Education</span>
             </h3>
             <div class="timeline-list">
-              <div class="timeline-node">
-                <div class="timeline-bullet"></div>
-                <div class="timeline-period">Jan 2023 – 2027</div>
+              <div class="timeline-card">
+                <span class="timeline-period-badge">Jan 2023 – 2027</span>
                 <h4 class="timeline-role">B.Sc. in Computer Science &amp; Engineering</h4>
                 <div class="timeline-company">Bangladesh University of Business &amp; Technology (BUBT)</div>
                 <p class="timeline-desc">
@@ -650,16 +660,14 @@
                 </p>
               </div>
 
-              <div class="timeline-node">
-                <div class="timeline-bullet"></div>
-                <div class="timeline-period">2019 – 2021</div>
+              <div class="timeline-card">
+                <span class="timeline-period-badge">2019 – 2021</span>
                 <h4 class="timeline-role">Higher Secondary Certificate (HSC) — Science</h4>
                 <div class="timeline-company">Govt. Ainuddin College · GPA: 3.75 / 5.00</div>
               </div>
 
-              <div class="timeline-node">
-                <div class="timeline-bullet"></div>
-                <div class="timeline-period">2014 – 2019</div>
+              <div class="timeline-card">
+                <span class="timeline-period-badge">2014 – 2019</span>
                 <h4 class="timeline-role">Secondary School Certificate (SSC) — Science</h4>
                 <div class="timeline-company">Madhukhali Pilot High School · GPA: 3.50 / 5.00</div>
               </div>
@@ -686,7 +694,7 @@
                 <a href="mailto:mdraihan2328@gmail.com" class="btn btn-primary">
                   <i data-lucide="mail" style="width: 16px; height: 16px;"></i> Send Direct Email
                 </a>
-                <a href="Muhammad Raihan Molla-CV.pdf" target="_blank" class="btn btn-secondary" download>
+                <a href="Muhammad Raihan Molla-CV.pdf" target="_blank" class="btn btn-accent" download>
                   <i data-lucide="file-down" style="width: 16px; height: 16px;"></i> Download Full CV (PDF)
                 </a>
               </div>
@@ -696,7 +704,9 @@
             <div class="contact-channels-list">
               <div class="contact-channel-item" style="cursor: pointer;" data-copy-val="mdraihan2328@gmail.com" title="Click to copy email">
                 <div class="channel-info">
-                  <i data-lucide="mail" class="channel-icon"></i>
+                  <div class="channel-icon-socket">
+                    <i data-lucide="mail"></i>
+                  </div>
                   <div>
                     <div class="channel-label">Email Address (Click to Copy)</div>
                     <div class="channel-val mono">mdraihan2328@gmail.com</div>
@@ -707,7 +717,9 @@
 
               <div class="contact-channel-item" style="cursor: pointer;" data-copy-val="01876917513" title="Click to copy phone number">
                 <div class="channel-info">
-                  <i data-lucide="phone" class="channel-icon"></i>
+                  <div class="channel-icon-socket">
+                    <i data-lucide="phone"></i>
+                  </div>
                   <div>
                     <div class="channel-label">Phone / WhatsApp (Click to Copy)</div>
                     <div class="channel-val mono">+880 1876-917513</div>
@@ -718,7 +730,9 @@
 
               <a href="https://linkedin.com/in/raihanx009" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
                 <div class="channel-info">
-                  <i data-lucide="linkedin" class="channel-icon"></i>
+                  <div class="channel-icon-socket">
+                    <i data-lucide="linkedin"></i>
+                  </div>
                   <div>
                     <div class="channel-label">LinkedIn Profile</div>
                     <div class="channel-val">Muhammad Raihan Molla</div>
@@ -729,7 +743,9 @@
 
               <a href="https://github.com/raihan12121" target="_blank" rel="noopener noreferrer" class="contact-channel-item">
                 <div class="channel-info">
-                  <i data-lucide="github" class="channel-icon"></i>
+                  <div class="channel-icon-socket">
+                    <i data-lucide="github"></i>
+                  </div>
                   <div>
                     <div class="channel-label">GitHub Repositories</div>
                     <div class="channel-val mono">github.com/raihan12121</div>
@@ -740,7 +756,9 @@
 
               <div class="contact-channel-item">
                 <div class="channel-info">
-                  <i data-lucide="map-pin" class="channel-icon"></i>
+                  <div class="channel-icon-socket">
+                    <i data-lucide="map-pin"></i>
+                  </div>
                   <div>
                     <div class="channel-label">Base Location</div>
                     <div class="channel-val">Dhaka, Bangladesh</div>
@@ -766,9 +784,9 @@
         <a href="https://github.com/raihan12121" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary);">GitHub</a>
         <a href="https://linkedin.com/in/raihanx009" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary);">LinkedIn</a>
         <a href="https://leetcode.com/raihan009" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary);">LeetCode</a>
-        <a href="#home" style="color: var(--accent-cyan); display: inline-flex; align-items: center; gap: 0.25rem;">
+        <a href="#home" class="footer-btn-top">
           <span>Back to top</span>
-          <i data-lucide="arrow-up" style="width: 14px; height: 14px;"></i>
+          <i data-lucide="arrow-up" style="width: 13px; height: 13px;"></i>
         </a>
       </div>
     </div>
