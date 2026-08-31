@@ -18,229 +18,264 @@
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/101105519?v=4">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Cyber-RPG Game Stylesheet -->
+  <!-- Modern Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ==================== TOP GAME STATUS HUD ==================== -->
-  <header class="game-hud-header">
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header">
     <div class="container">
-      <div class="hud-panel-container">
-        
-        <!-- Player Status Block -->
-        <div class="player-status-block">
-          <div class="player-avatar-socket">RM</div>
-          <div class="player-meta-lines">
-            <div class="player-name-row">
-              <span>Muhammad Raihan Molla</span>
-              <span class="player-level-badge">BUBT CSE · Jan 2023 – 2027</span>
-            </div>
-            <div class="player-gauges-row">
-              <div class="gauge-item">
-                <span style="color: var(--accent-mint); font-weight: 700;">STATUS</span>
-                <div class="gauge-track">
-                  <div class="gauge-fill-hp"></div>
-                </div>
-                <span>ACTIVE</span>
-              </div>
-              <div class="gauge-item hud-gauges-row">
-                <span style="color: var(--accent-bright-green); font-weight: 700;">DEV LAB</span>
-                <div class="gauge-track">
-                  <div class="gauge-fill-mp"></div>
-                </div>
-                <span>ARI SOFTWARE LAB</span>
-              </div>
-            </div>
+      <div class="nav-container">
+        <a href="#home" class="brand-link">
+          <div class="brand-logo-badge">RM</div>
+          <div>
+            <span style="color: var(--text-primary);">Muhammad Raihan</span>
+            <span style="color: var(--text-muted); font-size: 0.85rem; font-weight: 400; margin-left: 4px;">Molla</span>
           </div>
-        </div>
+        </a>
 
-        <!-- Fast Travel Navigation Hotbar -->
-        <nav class="hud-nav-menu">
-          <a href="#research" class="hud-nav-btn">
-            <i data-lucide="scroll" style="width: 14px; height: 14px;"></i>
-            <span>Research</span>
-          </a>
-          <a href="#projects" class="hud-nav-btn">
-            <i data-lucide="shield" style="width: 14px; height: 14px;"></i>
-            <span>Projects</span>
-          </a>
-          <a href="#vectors" class="hud-nav-btn">
-            <i data-lucide="compass" style="width: 14px; height: 14px;"></i>
-            <span>Interests</span>
-          </a>
-          <a href="#skills" class="hud-nav-btn">
-            <i data-lucide="zap" style="width: 14px; height: 14px;"></i>
-            <span>Skills</span>
-          </a>
-          <a href="#experience" class="hud-nav-btn">
-            <i data-lucide="map" style="width: 14px; height: 14px;"></i>
-            <span>Experience</span>
-          </a>
-          <a href="#contact" class="hud-nav-btn">
-            <i data-lucide="radio" style="width: 14px; height: 14px;"></i>
-            <span>Contact</span>
-          </a>
+        <!-- Desktop Navigation -->
+        <nav class="nav-menu">
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#research" class="nav-link">Research</a>
+          <a href="#interests" class="nav-link">Interests</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#contact" class="nav-link">Contact</a>
         </nav>
 
-        <!-- Right Game Controls -->
-        <div class="hud-actions-right">
-          <button class="game-toggle-btn active" id="sound-toggle-btn" title="Toggle sound effects">
-            <i data-lucide="volume-2" style="width: 14px; height: 14px;"></i>
-            <span>SFX: ON</span>
-          </button>
-          <a href="Muhammad Raihan Molla-CV.pdf" target="_blank" class="btn btn-primary" style="padding: 0.4rem 0.85rem; font-size: 0.8rem;" download>
-            <i data-lucide="file-down" style="width: 14px; height: 14px;"></i>
-            <span>Download CV</span>
+        <!-- Nav Actions -->
+        <div class="nav-actions">
+          <a href="Muhammad Raihan Molla-CV.pdf" target="_blank" class="btn btn-secondary btn-resume-nav" download>
+            <i data-lucide="file-down" style="width: 15px; height: 15px; color: var(--accent-emerald);"></i>
+            <span>Curriculum Vitae</span>
           </a>
-          <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle Navigation">
+          <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle navigation">
             <i data-lucide="menu" style="width: 18px; height: 18px;"></i>
           </button>
         </div>
-
       </div>
     </div>
   </header>
 
   <!-- Mobile Drawer -->
   <div class="mobile-nav-drawer" id="mobile-drawer">
-    <a href="#research" class="hud-nav-btn">📜 Research &amp; Publications</a>
-    <a href="#projects" class="hud-nav-btn">⚔️ Projects &amp; Software</a>
-    <a href="#vectors" class="hud-nav-btn">🎯 Research Interests</a>
-    <a href="#skills" class="hud-nav-btn">⚡ Technical Skills Matrix</a>
-    <a href="#experience" class="hud-nav-btn">🗺️ Work &amp; Education</a>
-    <a href="#contact" class="hud-nav-btn">📡 Contact &amp; Transmission</a>
+    <a href="#projects" class="nav-link">Featured Projects</a>
+    <a href="#research" class="nav-link">Research &amp; Theses</a>
+    <a href="#interests" class="nav-link">Research Interests</a>
+    <a href="#skills" class="nav-link">Technical Skills</a>
+    <a href="#experience" class="nav-link">Experience &amp; Education</a>
+    <a href="#contact" class="nav-link">Contact &amp; Connect</a>
     <a href="Muhammad Raihan Molla-CV.pdf" target="_blank" class="btn btn-primary" style="margin-top: 1rem;" download>
       <i data-lucide="file-down" style="width: 16px; height: 16px;"></i> Download CV (PDF)
     </a>
   </div>
 
   <main id="home">
-    <!-- ==================== HERO & PROVABLE METRICS ==================== -->
+    <!-- ==================== HERO SECTION ==================== -->
     <section class="hero-section">
-      <div class="container hero-grid">
+      <div class="container hero-content-wrapper">
         
-        <!-- Hero Left Column: Player Bio & Verified CV Numbers -->
-        <div class="hero-content">
-          <div class="hero-mission-badge">
-            <div class="status-dot-socket">
-              <span class="status-dot"></span>
-            </div>
-            <span>AI Engineer · ML Researcher · Mobile &amp; Backend Developer</span>
+        <div class="hero-status-pill">
+          <span class="status-dot"></span>
+          <span>B.Sc. CSE Researcher @ BUBT · Founder @ ARI Software Lab</span>
+        </div>
+
+        <h1 class="hero-title">
+          Translating Research into <span class="gradient-green">Real-World AI Products.</span>
+        </h1>
+
+        <div class="hero-role-subtitle">AI Engineer · ML Researcher · Mobile &amp; Backend Developer</div>
+
+        <p class="hero-bio">
+          Final-year Computer Science and Engineering (CSE) student at <strong>BUBT</strong> (2023 – 2027) with a strong foundation in machine learning research and deep learning. Experienced in building cross-platform mobile applications (<strong>Flutter/Dart</strong>) and backend systems (<strong>Python, Django, FastAPI</strong>). Analytical, self-driven, and passionate about translating research into impactful systems.
+        </p>
+
+        <div class="hero-action-row">
+          <a href="#projects" class="btn btn-primary">
+            <i data-lucide="folder-git-2" style="width: 16px; height: 16px;"></i>
+            Explore Projects
+          </a>
+          <a href="#research" class="btn btn-secondary">
+            <i data-lucide="book-open" style="width: 16px; height: 16px;"></i>
+            View Research
+          </a>
+          <a href="Muhammad Raihan Molla-CV.pdf" target="_blank" class="btn btn-accent" download>
+            <i data-lucide="file-text" style="width: 16px; height: 16px;"></i>
+            Download CV (PDF)
+          </a>
+        </div>
+
+        <!-- Verified Proof Numbers Grid -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-val">1,000+</div>
+            <div class="metric-label">Google Play Downloads across published mobile apps</div>
           </div>
-
-          <h1 class="hero-title">
-            Translating Research into <span class="gradient-green">Real-World AI Products.</span>
-          </h1>
-
-          <div class="hero-role-title">B.Sc. Engineering in Computer Science &amp; Engineering @ BUBT (2023 – 2027)</div>
-
-          <p class="hero-statement">
-            Final-year Computer Science and Engineering (CSE) student at <strong>BUBT</strong> with a strong foundation in machine learning research and deep learning. Experienced in building cross-platform mobile applications (<strong>Flutter/Dart</strong>) and backend systems (<strong>Python, Django, FastAPI</strong>). Analytical and self-driven.
-          </p>
-
-          <div class="hero-action-row">
-            <a href="#research" class="btn btn-primary">
-              <i data-lucide="scroll" style="width: 16px; height: 16px;"></i>
-              View Research
-            </a>
-            <a href="#projects" class="btn btn-secondary">
-              <i data-lucide="shield" style="width: 16px; height: 16px;"></i>
-              View Projects
-            </a>
-            <a href="Muhammad Raihan Molla-CV.pdf" target="_blank" class="btn btn-accent" download>
-              <i data-lucide="file-down" style="width: 16px; height: 16px;"></i>
-              Download CV (PDF)
-            </a>
+          <div class="metric-card">
+            <div class="metric-val">27</div>
+            <div class="metric-label">Custom GLSL shaders in Incursion astrophysics simulation</div>
           </div>
-
-          <!-- Verified CV Numbers Grid (100% Real Facts from CV) -->
-          <div class="character-stats-grid">
-            <div class="stat-box">
-              <div class="stat-header">
-                <span class="stat-name">DOWNLOADS</span>
-                <span class="stat-val">1000+</span>
-              </div>
-              <div class="stat-desc">Google Play downloads across published apps</div>
-            </div>
-
-            <div class="stat-box">
-              <div class="stat-header">
-                <span class="stat-name">SHADERS</span>
-                <span class="stat-val">27</span>
-              </div>
-              <div class="stat-desc">Custom GLSL shaders in Incursion simulation</div>
-            </div>
-
-            <div class="stat-box">
-              <div class="stat-header">
-                <span class="stat-name">PARTICLES</span>
-                <span class="stat-val">30,000</span>
-              </div>
-              <div class="stat-desc">Particle system for astrophysics modeling</div>
-            </div>
-
-            <div class="stat-box">
-              <div class="stat-header">
-                <span class="stat-name">DATASETS</span>
-                <span class="stat-val">3</span>
-              </div>
-              <div class="stat-desc">FF++, Celeb-DF, DFDC studied in Thesis</div>
-            </div>
+          <div class="metric-card">
+            <div class="metric-val">30,000</div>
+            <div class="metric-label">Particle physics system presented to academic panel</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">3</div>
+            <div class="metric-label">Benchmark datasets (FF++, Celeb-DF, DFDC) studied in Thesis</div>
           </div>
         </div>
 
-        <!-- Hero Right Column: Incursion Physics Engine Sandbox -->
-        <div class="hero-lab-card">
-          <div class="lab-card-header">
-            <span class="mono" style="font-size: 0.78rem; font-weight: 700; color: var(--accent-emerald);">
-              ⚡ INCURSION: ASTROPHYSICAL SIMULATION
-            </span>
-            <span class="mono" style="font-size: 0.72rem; color: var(--accent-mint); font-weight: 600;" id="telemetry-fps">60 FPS</span>
-          </div>
+      </div>
+    </section>
 
-          <div class="lab-canvas-container">
-            <canvas id="hero-incursion-canvas"></canvas>
-          </div>
-
-          <!-- Interactive Physics Sliders -->
-          <div class="lab-controls-panel">
-            <div class="slider-row">
-              <span class="slider-label">Kerr Spin (a/M):</span>
-              <input type="range" class="neo-range-slider" id="slider-bh-spin" min="0.0" max="0.99" step="0.01" value="0.88">
-              <span class="slider-val-readout" id="val-bh-spin">0.88</span>
-            </div>
-
-            <div class="slider-row">
-              <span class="slider-label">Disk Tilt Angle:</span>
-              <input type="range" class="neo-range-slider" id="slider-bh-inc" min="5" max="75" step="1" value="35">
-              <span class="slider-val-readout" id="val-bh-inc">35°</span>
-            </div>
-
-            <div class="slider-row">
-              <span class="slider-label">Particle Velocity:</span>
-              <input type="range" class="neo-range-slider" id="slider-bh-vel" min="0.2" max="2.5" step="0.1" value="1.0">
-              <span class="slider-val-readout" id="val-bh-vel">1.0x</span>
-            </div>
-
-            <div class="lab-telemetry-strip">
-              <span id="telemetry-particles">30,000 particle system</span>
-              <span>27 GLSL Shaders</span>
-              <span>Presented to Academic Panel</span>
-            </div>
-          </div>
+    <!-- ==================== FEATURED PROJECTS & SYSTEMS ==================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Engineering &amp; Systems</span>
+          <h2 class="section-title">Featured Projects &amp; Software</h2>
+          <p class="section-desc">Commercial mobile software published on Google Play, scientific graphics engines, and NLP platforms.</p>
         </div>
 
+        <div class="projects-grid">
+
+          <!-- Project 1: ARI Software Lab Apps -->
+          <article class="project-card">
+            <div class="project-header-row">
+              <div>
+                <div class="project-type-tag">Commercial Mobile Studio · Founder</div>
+                <h3 class="project-name">Mobile Apps — ARI Software Lab</h3>
+              </div>
+              <span class="pill-tag accent">Google Play Live</span>
+            </div>
+
+            <p class="project-desc">
+              Founded an independent software studio releasing cross-platform applications to Google Play. Managed the full product lifecycle: ideation, Flutter architecture, ASO optimization, Play Store publishing, and post-launch iteration.
+            </p>
+
+            <ul class="project-bullets-list">
+              <li class="project-bullet-item">
+                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                <span><strong>Money Manager:</strong> Personal expense tracker featuring full Bengali localization and intuitive financial management.</span>
+              </li>
+              <li class="project-bullet-item">
+                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                <span><strong>PDF Scanner:</strong> Mobile document scanning and image processing utility.</span>
+              </li>
+              <li class="project-bullet-item">
+                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                <span><strong>Music Player &amp; AnimalCam AR:</strong> Augmented reality camera experience and mobile media engine.</span>
+              </li>
+              <li class="project-bullet-item">
+                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                <span><strong>Traction:</strong> Published 3+ apps with 1,000+ total downloads on Google Play.</span>
+              </li>
+            </ul>
+
+            <div class="project-footer-bar">
+              <div class="tags-row">
+                <span class="pill-tag">Flutter</span>
+                <span class="pill-tag">Dart</span>
+                <span class="pill-tag">Firebase Realtime DB</span>
+                <span class="pill-tag">Riverpod</span>
+                <span class="pill-tag">Flame Engine</span>
+                <span class="pill-tag">ASO</span>
+              </div>
+              <span class="mono" style="font-size: 0.82rem; color: var(--accent-mint); font-weight: 600;">1000+ Downloads</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Incursion Simulator -->
+          <article class="project-card">
+            <div class="project-header-row">
+              <div>
+                <div class="project-type-tag">Astrophysics &amp; Graphics Simulation</div>
+                <h3 class="project-name">Incursion — Real-Time Black Hole Lifecycle Simulator</h3>
+              </div>
+              <a href="https://github.com/raihan12121/Incursion-A-Blackhole-effect-and-BigBang-simulation" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.4rem 0.85rem; font-size: 0.82rem;">
+                <i data-lucide="github" style="width: 14px; height: 14px;"></i> View Code Repo ↗
+              </a>
+            </div>
+
+            <p class="project-desc">
+              A real-time scientific simulation modeling relativistic astrophysical phenomena around Kerr black holes, presented to an academic panel at BUBT.
+            </p>
+
+            <ul class="project-bullets-list">
+              <li class="project-bullet-item">
+                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                <span><strong>Shader Engine:</strong> Developed 27 custom GLSL shaders modeling gravitational lensing, relativistic Doppler beaming, and event horizon curvature.</span>
+              </li>
+              <li class="project-bullet-item">
+                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                <span><strong>Physics System:</strong> GPU-accelerated 30,000-particle system simulating accretion discs, relativistic plasma jets, and Hawking radiation.</span>
+              </li>
+            </ul>
+
+            <div class="project-footer-bar">
+              <div class="tags-row">
+                <span class="pill-tag">Python</span>
+                <span class="pill-tag">OpenGL</span>
+                <span class="pill-tag">GLSL Shaders</span>
+                <span class="pill-tag">Particle Systems</span>
+                <span class="pill-tag">PBR</span>
+              </div>
+              <span class="mono" style="font-size: 0.82rem; color: var(--accent-mint); font-weight: 600;">27 Shaders · 30k Particles</span>
+            </div>
+          </article>
+
+          <!-- Project 3: AI-Powered Plagiarism Detection -->
+          <article class="project-card">
+            <div class="project-header-row">
+              <div>
+                <div class="project-type-tag">Natural Language Processing</div>
+                <h3 class="project-name">AI-Powered Plagiarism Detection Engine</h3>
+              </div>
+              <a href="https://github.com/raihan12121" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.4rem 0.85rem; font-size: 0.82rem;">
+                <i data-lucide="github" style="width: 14px; height: 14px;"></i> GitHub Profile ↗
+              </a>
+            </div>
+
+            <p class="project-desc">
+              Built a document-level plagiarism detection system using semantic embeddings and cosine similarity to capture nuanced textual and semantic similarity beyond raw keyword matching.
+            </p>
+
+            <ul class="project-bullets-list">
+              <li class="project-bullet-item">
+                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                <span><strong>Semantic Embeddings:</strong> Computes document-level representations using contextual transformer embeddings.</span>
+              </li>
+              <li class="project-bullet-item">
+                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                <span><strong>REST API:</strong> Supports multi-document batch comparison with high-throughput REST API endpoints.</span>
+              </li>
+            </ul>
+
+            <div class="project-footer-bar">
+              <div class="tags-row">
+                <span class="pill-tag">Python</span>
+                <span class="pill-tag">NLP</span>
+                <span class="pill-tag">FastAPI</span>
+                <span class="pill-tag">Transformers</span>
+                <span class="pill-tag">Semantic Embeddings</span>
+              </div>
+              <span class="mono" style="font-size: 0.82rem; color: var(--accent-mint); font-weight: 600;">Batch REST API</span>
+            </div>
+          </article>
+
+        </div>
       </div>
     </section>
 
@@ -253,314 +288,180 @@
           <p class="section-desc">Empirical investigations in computer vision forensics, multi-step time-series forecasting, and medical imaging diagnostics.</p>
         </div>
 
-        <div class="quests-grid">
+        <div class="research-grid">
 
           <!-- Research 1: Deepfake Detection Thesis -->
-          <article class="quest-card">
-            <div class="quest-header-bar">
-              <div class="quest-tag-row">
-                <span class="quest-badge tier-mythic">UNDERGRADUATE THESIS</span>
-                <span class="quest-badge">Computer Vision</span>
-                <span class="quest-badge">Forensics</span>
+          <article class="research-card">
+            <div class="research-header-row">
+              <div>
+                <span class="pill-tag accent" style="margin-bottom: 0.4rem; display: inline-block;">Undergraduate Thesis</span>
+                <h3 class="research-title">Deepfake Image Detection — Cross-Dataset Generalization Study</h3>
               </div>
-              <span class="quest-badge" style="color: var(--accent-emerald); border-color: var(--accent-emerald);">THESIS</span>
+              <span class="pill-tag">Thesis Completed</span>
             </div>
 
-            <h3 class="quest-title">Deepfake Image Detection — Cross-Dataset Generalization Study</h3>
-            <p class="quest-briefing">
-              Developed a dual-stream EfficientNet-B4 model fusing spatial and FFT-frequency features for deepfake detection. Evaluated on FF++, Celeb-DF, and DFDC datasets; studied cross-dataset generalization and domain shift. Implemented GPU-accelerated training pipeline with data augmentation and adversarial robustness testing.
+            <p class="research-summary">
+              Developed a dual-stream EfficientNet-B4 model fusing spatial and FFT-frequency features for deepfake detection. Evaluated on FF++, Celeb-DF, and DFDC datasets; studied cross-dataset generalization, frequency blending artifacts, and domain shift. Implemented a GPU-accelerated training pipeline with data augmentation and adversarial robustness testing.
             </p>
 
-            <!-- Verified Benchmark Dataset Badges (No fake percentages) -->
-            <div class="benchmark-meter-block">
-              <div class="benchmark-meter-title">
-                <span>Evaluated Benchmark Datasets &amp; Domain Shift Analysis</span>
-                <span style="color: var(--accent-emerald); font-size: 0.72rem;">Cross-Dataset Evaluation</span>
-              </div>
-              <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.5rem;">
-                <div style="background: var(--game-bg); border: 1px solid var(--hud-border); padding: 0.5rem 0.85rem; border-radius: var(--radius-xs); flex: 1; min-width: 160px;">
-                  <div style="font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; color: var(--accent-mint);">FaceForensics++ (FF++)</div>
-                  <div style="font-size: 0.75rem; color: var(--text-secondary);">Spatial &amp; FFT frequency fusion testing</div>
-                </div>
-                <div style="background: var(--game-bg); border: 1px solid var(--hud-border); padding: 0.5rem 0.85rem; border-radius: var(--radius-xs); flex: 1; min-width: 160px;">
-                  <div style="font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; color: var(--accent-mint);">Celeb-DF</div>
-                  <div style="font-size: 0.75rem; color: var(--text-secondary);">Cross-dataset generalization validation</div>
-                </div>
-                <div style="background: var(--game-bg); border: 1px solid var(--hud-border); padding: 0.5rem 0.85rem; border-radius: var(--radius-xs); flex: 1; min-width: 160px;">
-                  <div style="font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; color: var(--accent-mint);">DFDC Dataset</div>
-                  <div style="font-size: 0.75rem; color: var(--text-secondary);">Adversarial robustness &amp; domain shift</div>
-                </div>
-              </div>
-            </div>
-
-            <ul class="quest-objectives-list">
-              <li class="quest-obj-item">
+            <ul class="project-bullets-list">
+              <li class="project-bullet-item">
                 <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
-                <span><strong>Dual-Stream Model:</strong> Developed a dual-stream EfficientNet-B4 model fusing spatial and FFT-frequency features for deepfake detection.</span>
+                <span><strong>Dual-Stream Architecture:</strong> Fuses RGB spatial representations with 2D FFT frequency magnitude features to expose boundary artifacts.</span>
               </li>
-              <li class="quest-obj-item">
+              <li class="project-bullet-item">
                 <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
-                <span><strong>Robustness Pipeline:</strong> Implemented GPU-accelerated training pipeline with data augmentation and adversarial robustness testing.</span>
+                <span><strong>Datasets Evaluated:</strong> Rigorously benchmarked across <strong>FaceForensics++ (FF++)</strong>, <strong>Celeb-DF</strong>, and <strong>DFDC</strong> datasets.</span>
+              </li>
+              <li class="project-bullet-item">
+                <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+                <span><strong>Robustness Pipeline:</strong> Built an end-to-end GPU training pipeline with targeted augmentations and adversarial robustness evaluation.</span>
               </li>
             </ul>
 
-            <div class="quest-loot-strip">
-              <span class="mono" style="font-size: 0.78rem; color: var(--accent-emerald); margin-right: 0.5rem;">Core Stack:</span>
-              <span class="quest-badge">PyTorch</span>
-              <span class="quest-badge">EfficientNet-B4</span>
-              <span class="quest-badge">FFT-based Forensics</span>
-              <span class="quest-badge">OpenCV</span>
-              <span class="quest-badge">Weights &amp; Biases</span>
+            <div class="project-footer-bar">
+              <div class="tags-row">
+                <span class="pill-tag">PyTorch</span>
+                <span class="pill-tag">EfficientNet-B4</span>
+                <span class="pill-tag">FFT-based Forensics</span>
+                <span class="pill-tag">OpenCV</span>
+                <span class="pill-tag">Weights &amp; Biases</span>
+              </div>
             </div>
           </article>
 
           <!-- Research 2: AQI Prediction -->
-          <article class="quest-card">
-            <div class="quest-header-bar">
-              <div class="quest-tag-row">
-                <span class="quest-badge tier-legendary">RESEARCH STUDY</span>
-                <span class="quest-badge">Time-Series ML</span>
-                <span class="quest-badge">Environmental AI</span>
+          <article class="research-card">
+            <div class="research-header-row">
+              <div>
+                <span class="pill-tag accent" style="margin-bottom: 0.4rem; display: inline-block;">Time-Series Machine Learning</span>
+                <h3 class="research-title">AQI Prediction — LSTM/BiLSTM vs. Classical ML Baselines</h3>
               </div>
-              <span class="quest-badge" style="color: var(--accent-emerald); border-color: var(--accent-emerald);">COMPLETED</span>
+              <span class="pill-tag">Research Study</span>
             </div>
 
-            <h3 class="quest-title">AQI Prediction — LSTM/BiLSTM vs. Classical ML Baselines</h3>
-            <p class="quest-briefing">
-              Compared LSTM, BiLSTM, ARIMA, Random Forest, and XGBoost on hourly pollutant and meteorological data. Achieved best performance with BiLSTM for multi-step air quality index forecasting.
+            <p class="research-summary">
+              A comprehensive comparative study on multi-step air pollution and PM2.5 forecasting over multivariate hourly pollutant and meteorological time-series datasets.
             </p>
 
-            <!-- Interactive BiLSTM Multi-Step Forecasting Canvas -->
-            <div class="forecast-chart-container">
-              <canvas id="aqi-forecast-canvas"></canvas>
-            </div>
-
-            <div style="display: flex; gap: 0.5rem; margin-bottom: 1.25rem; flex-wrap: wrap;">
-              <span class="mono" style="font-size: 0.75rem; color: var(--text-muted); align-self: center;">Telemetry Stream:</span>
-              <button class="quest-badge" data-pollutant="pm25" style="cursor: pointer; color: var(--accent-mint); border-color: var(--accent-emerald);">PM2.5 (Fine Particulate)</button>
-              <button class="quest-badge" data-pollutant="pm10" style="cursor: pointer;">PM10 (Coarse)</button>
-              <button class="quest-badge" data-pollutant="no2" style="cursor: pointer;">NO2 (Nitrogen Dioxide)</button>
-            </div>
-
-            <ul class="quest-objectives-list">
-              <li class="quest-obj-item">
+            <ul class="project-bullets-list">
+              <li class="project-bullet-item">
                 <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
-                <span><strong>Model Benchmark:</strong> Compared LSTM, BiLSTM, ARIMA, Random Forest, and XGBoost on hourly pollutant and meteorological data.</span>
+                <span><strong>Model Benchmarking:</strong> Compared LSTM, BiLSTM, statistical ARIMA, Random Forest, and XGBoost on hourly pollutant and meteorological data.</span>
               </li>
-              <li class="quest-obj-item">
+              <li class="project-bullet-item">
                 <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
-                <span><strong>Key Finding:</strong> Achieved best performance with BiLSTM for multi-step air quality index forecasting.</span>
+                <span><strong>Outcome:</strong> Achieved best performance with BiLSTM for multi-step air quality index forecasting.</span>
               </li>
             </ul>
 
-            <div class="quest-loot-strip">
-              <span class="mono" style="font-size: 0.78rem; color: var(--accent-emerald); margin-right: 0.5rem;">Core Stack:</span>
-              <span class="quest-badge">LSTM</span>
-              <span class="quest-badge">BiLSTM</span>
-              <span class="quest-badge">ARIMA</span>
-              <span class="quest-badge">Random Forest</span>
-              <span class="quest-badge">XGBoost</span>
+            <div class="project-footer-bar">
+              <div class="tags-row">
+                <span class="pill-tag">BiLSTM</span>
+                <span class="pill-tag">LSTM</span>
+                <span class="pill-tag">ARIMA</span>
+                <span class="pill-tag">Random Forest</span>
+                <span class="pill-tag">XGBoost</span>
+              </div>
             </div>
           </article>
 
           <!-- Research 3: Lung Cancer Detection -->
-          <article class="quest-card">
-            <div class="quest-header-bar">
-              <div class="quest-tag-row">
-                <span class="quest-badge" style="color: var(--accent-amber); border-color: var(--accent-amber);">ONGOING RESEARCH</span>
-                <span class="quest-badge">Medical Imaging</span>
-                <span class="quest-badge">Computer Vision</span>
+          <article class="research-card">
+            <div class="research-header-row">
+              <div>
+                <span class="pill-tag" style="background: rgba(245, 158, 11, 0.1); border-color: rgba(245, 158, 11, 0.3); color: var(--accent-amber); margin-bottom: 0.4rem; display: inline-block;">Medical Imaging</span>
+                <h3 class="research-title">Lung Cancer Detection Using Deep Learning on CT Scans</h3>
               </div>
-              <span class="quest-badge" style="color: var(--accent-amber);">ONGOING</span>
+              <span class="pill-tag" style="color: var(--accent-amber);">Ongoing</span>
             </div>
 
-            <h3 class="quest-title">Lung Cancer Detection Using Deep Learning on CT Scans</h3>
-            <p class="quest-briefing">
-              Applied CNN-based classification to CT scan datasets for early-stage lung cancer detection. Benchmarked multiple architectures (ResNet, VGG, custom CNN) on public medical imaging datasets.
+            <p class="research-summary">
+              Applied CNN-based classification to computed tomography (CT) scan datasets for early-stage lung cancer detection.
             </p>
 
-            <ul class="quest-objectives-list">
-              <li class="quest-obj-item">
+            <ul class="project-bullets-list">
+              <li class="project-bullet-item">
                 <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
-                <span><strong>Classification Pipeline:</strong> Applied CNN-based classification to CT scan datasets for early-stage lung cancer detection.</span>
+                <span><strong>Classification Pipeline:</strong> Developing automated CNN classification pipelines for pulmonary nodule detection.</span>
               </li>
-              <li class="quest-obj-item">
+              <li class="project-bullet-item">
                 <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
-                <span><strong>Model Benchmarking:</strong> Benchmarked multiple architectures (ResNet, VGG, custom CNN) on public medical imaging datasets.</span>
+                <span><strong>Architecture Benchmarks:</strong> Benchmarking multiple deep architectures (ResNet, VGG, custom CNN) on public medical imaging datasets.</span>
               </li>
             </ul>
 
-            <div class="quest-loot-strip">
-              <span class="mono" style="font-size: 0.78rem; color: var(--accent-emerald); margin-right: 0.5rem;">Core Stack:</span>
-              <span class="quest-badge">PyTorch</span>
-              <span class="quest-badge">ResNet</span>
-              <span class="quest-badge">VGG</span>
-              <span class="quest-badge">Custom CNN</span>
-              <span class="quest-badge">Medical Image Analysis</span>
+            <div class="project-footer-bar">
+              <div class="tags-row">
+                <span class="pill-tag">PyTorch</span>
+                <span class="pill-tag">ResNet</span>
+                <span class="pill-tag">VGG</span>
+                <span class="pill-tag">Custom CNN</span>
+                <span class="pill-tag">Medical Image Analysis</span>
+              </div>
             </div>
           </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== PROJECTS & SOFTWARE ==================== -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-eyebrow">Projects &amp; Systems</span>
-          <h2 class="section-title">Projects &amp; Software</h2>
-          <p class="section-desc">Projects listed directly in the verified Curriculum Vitae.</p>
-        </div>
-
-        <div class="armory-grid">
-
-          <!-- Project 1: ARI Software Lab Apps -->
-          <div class="armory-card">
-            <div class="armory-top">
-              <div class="armory-type-badge">MOBILE APPS · FLUTTER / DART / FIREBASE</div>
-              <h3 class="armory-name">Mobile Apps — ARI Software Lab</h3>
-              <p class="armory-desc">
-                Published PDF Scanner, Money Manager (expense tracker with Bengali localization), Music Player, and AnimalCam AR camera app on Google Play.
-              </p>
-              <div class="armory-stat-tag">
-                <i data-lucide="download-cloud" style="width: 14px; height: 14px; color: var(--accent-emerald);"></i>
-                <span>Published on Google Play with 1000+ downloads</span>
-              </div>
-              <div style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.6;">
-                • <strong>Money Manager:</strong> Personal expense tracker with Bengali localization.<br>
-                • <strong>PDF Scanner:</strong> Mobile document scanner and utility.<br>
-                • <strong>Music Player &amp; AnimalCam AR:</strong> AR camera and media player app.
-              </div>
-            </div>
-            <div class="armory-bottom">
-              <div class="quest-tag-row">
-                <span class="quest-badge">Flutter</span>
-                <span class="quest-badge">Dart</span>
-                <span class="quest-badge">Firebase</span>
-                <span class="quest-badge">Riverpod</span>
-                <span class="quest-badge">Flame Engine</span>
-              </div>
-              <span class="mono" style="font-size: 0.8rem; color: var(--accent-emerald);">Google Play Live</span>
-            </div>
-          </div>
-
-          <!-- Project 2: Incursion Simulator -->
-          <div class="armory-card">
-            <div class="armory-top">
-              <div class="armory-type-badge">PYTHON / OPENGL / GLSL</div>
-              <h3 class="armory-name">Incursion — Real-Time Black Hole Lifecycle Simulator</h3>
-              <p class="armory-desc">
-                Built a real-time astrophysical simulation with 27 custom GLSL shaders and a 30,000-particle system. Simulated gravitational lensing, accretion discs, relativistic jets, and Hawking radiation; presented to academic panel.
-              </p>
-              <div class="armory-stat-tag">
-                <i data-lucide="cpu" style="width: 14px; height: 14px; color: var(--accent-emerald);"></i>
-                <span>27 Custom GLSL Shaders · 30,000-Particle System</span>
-              </div>
-              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.6;">
-                Simulated gravitational lensing, accretion discs, relativistic jets, and Hawking radiation; presented to academic panel at BUBT.
-              </p>
-            </div>
-            <div class="armory-bottom">
-              <div class="quest-tag-row">
-                <span class="quest-badge">Python</span>
-                <span class="quest-badge">OpenGL</span>
-                <span class="quest-badge">GLSL Shaders</span>
-                <span class="quest-badge">Particle Systems</span>
-              </div>
-              <a href="https://github.com/raihan12121/Incursion-A-Blackhole-effect-and-BigBang-simulation" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.8rem;">
-                <i data-lucide="github" style="width: 14px; height: 14px;"></i> GitHub ↗
-              </a>
-            </div>
-          </div>
-
-          <!-- Project 3: AI-Powered Plagiarism Detection -->
-          <div class="armory-card" style="grid-column: 1 / -1;">
-            <div class="armory-top">
-              <div class="armory-type-badge">PYTHON / NLP</div>
-              <h3 class="armory-name">AI-Powered Plagiarism Detection</h3>
-              <p class="armory-desc">
-                Built a document-level plagiarism detection system using semantic embeddings and cosine similarity. Supports multi-document batch comparison with a REST API interface.
-              </p>
-              <div class="armory-stat-tag">
-                <i data-lucide="layers" style="width: 14px; height: 14px; color: var(--accent-emerald);"></i>
-                <span>Semantic Embeddings · Cosine Similarity · Multi-Document Batch REST API</span>
-              </div>
-            </div>
-            <div class="armory-bottom">
-              <div class="quest-tag-row">
-                <span class="quest-badge">Python</span>
-                <span class="quest-badge">NLP</span>
-                <span class="quest-badge">FastAPI</span>
-                <span class="quest-badge">Semantic Embeddings</span>
-                <span class="quest-badge">Cosine Similarity</span>
-              </div>
-              <a href="https://github.com/raihan12121" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.8rem;">
-                <i data-lucide="github" style="width: 14px; height: 14px;"></i> GitHub ↗
-              </a>
-            </div>
-          </div>
 
         </div>
       </div>
     </section>
 
     <!-- ==================== RESEARCH INTERESTS ==================== -->
-    <section class="section" id="vectors">
+    <section class="section" id="interests">
       <div class="container">
         <div class="section-header">
-          <span class="section-eyebrow">Focus Vectors</span>
+          <span class="section-eyebrow">Inquiry Domains</span>
           <h2 class="section-title">Research Interests</h2>
-          <p class="section-desc">Research interests listed directly in the Curriculum Vitae.</p>
+          <p class="section-desc">Key focus areas and inquiry vectors as outlined in the Curriculum Vitae.</p>
         </div>
 
-        <div class="vectors-grid">
-          <div class="vector-card">
-            <div class="vector-icon-socket"><i data-lucide="shield-alert"></i></div>
-            <h4 class="vector-title">AI Safety</h4>
-            <p class="vector-desc">Research into alignment, safety constraints, and reliable machine learning systems.</p>
+        <div class="interests-grid">
+          <div class="interest-card">
+            <div class="interest-icon-socket"><i data-lucide="shield-alert"></i></div>
+            <h4 class="interest-title">AI Safety</h4>
+            <p class="interest-desc">Reliable architectures, alignment constraints, and safe ML deployment.</p>
           </div>
 
-          <div class="vector-card">
-            <div class="vector-icon-socket"><i data-lucide="scan-face"></i></div>
-            <h4 class="vector-title">Deepfake Detection</h4>
-            <p class="vector-desc">Dual-stream spatial and FFT-frequency domain analysis for synthetic media verification.</p>
+          <div class="interest-card">
+            <div class="interest-icon-socket"><i data-lucide="scan-face"></i></div>
+            <h4 class="interest-title">Deepfake Detection</h4>
+            <p class="interest-desc">Spatial &amp; FFT frequency domain analysis for synthetic media verification.</p>
           </div>
 
-          <div class="vector-card">
-            <div class="vector-icon-socket"><i data-lucide="sparkles"></i></div>
-            <h4 class="vector-title">Mechanistic Interpretability</h4>
-            <p class="vector-desc">Probing internal neural activations, feature representations, and circuit analysis.</p>
+          <div class="interest-card">
+            <div class="interest-icon-socket"><i data-lucide="sparkles"></i></div>
+            <h4 class="interest-title">Mechanistic Interpretability</h4>
+            <p class="interest-desc">Probing internal activations, attention maps, and feature representations.</p>
           </div>
 
-          <div class="vector-card">
-            <div class="vector-icon-socket"><i data-lucide="shield"></i></div>
-            <h4 class="vector-title">Adversarial Robustness</h4>
-            <p class="vector-desc">Evaluating model generalization under adversarial perturbation and distribution shift.</p>
+          <div class="interest-card">
+            <div class="interest-icon-socket"><i data-lucide="shield"></i></div>
+            <h4 class="interest-title">Adversarial Robustness</h4>
+            <p class="interest-desc">Model generalization under perturbation, noise, and domain shifts.</p>
           </div>
 
-          <div class="vector-card">
-            <div class="vector-icon-socket"><i data-lucide="microchip"></i></div>
-            <h4 class="vector-title">Edge AI</h4>
-            <p class="vector-desc">ESP32-CAM and Hugging Face model deployment on resource-constrained edge hardware.</p>
+          <div class="interest-card">
+            <div class="interest-icon-socket"><i data-lucide="microchip"></i></div>
+            <h4 class="interest-title">Edge AI</h4>
+            <p class="interest-desc">ESP32-CAM and Hugging Face model deployment on edge hardware.</p>
           </div>
 
-          <div class="vector-card">
-            <div class="vector-icon-socket"><i data-lucide="eye"></i></div>
-            <h4 class="vector-title">Computer Vision</h4>
-            <p class="vector-desc">Image classification, object detection (YOLO), medical CT analysis, and FFT forensics.</p>
+          <div class="interest-card">
+            <div class="interest-icon-socket"><i data-lucide="eye"></i></div>
+            <h4 class="interest-title">Computer Vision</h4>
+            <p class="interest-desc">Image classification, object detection (YOLO), medical CT, and forensics.</p>
           </div>
 
-          <div class="vector-card">
-            <div class="vector-icon-socket"><i data-lucide="bot"></i></div>
-            <h4 class="vector-title">LLM Agent Architectures</h4>
-            <p class="vector-desc">Prompt engineering, LangChain, ChromaDB vector stores, and RAG pipelines.</p>
+          <div class="interest-card">
+            <div class="interest-icon-socket"><i data-lucide="bot"></i></div>
+            <h4 class="interest-title">LLM Agent Architectures</h4>
+            <p class="interest-desc">Prompt engineering, LangChain, ChromaDB vector stores, and RAG.</p>
           </div>
 
-          <div class="vector-card">
-            <div class="vector-icon-socket"><i data-lucide="database"></i></div>
-            <h4 class="vector-title">Big Data</h4>
-            <p class="vector-desc">High-throughput data pipelines, database architectures, and distributed computation.</p>
+          <div class="interest-card">
+            <div class="interest-icon-socket"><i data-lucide="database"></i></div>
+            <h4 class="interest-title">Big Data</h4>
+            <p class="interest-desc">High-throughput data pipelines and database architectures.</p>
           </div>
         </div>
       </div>
@@ -571,120 +472,120 @@
       <div class="container">
         <div class="section-header">
           <span class="section-eyebrow">Technical Competencies</span>
-          <h2 class="section-title">Technical Skills</h2>
-          <p class="section-desc">Skills extracted directly and verbatim from the Curriculum Vitae.</p>
+          <h2 class="section-title">Technical Skills Matrix</h2>
+          <p class="section-desc">Technologies and frameworks applied across published research, mobile apps, and systems.</p>
         </div>
 
-        <div class="skill-tree-grid">
+        <div class="skills-matrix-grid">
 
-          <!-- Category 1: AI / ML Frameworks -->
-          <div class="skill-branch-card">
-            <h3 class="skill-branch-title">
+          <!-- Cat 1 -->
+          <div class="skill-category-card">
+            <h3 class="skill-cat-title">
               <i data-lucide="brain"></i>
               <span>AI / ML Frameworks</span>
             </h3>
-            <div class="skill-nodes-list">
-              <span class="skill-node">PyTorch</span>
-              <span class="skill-node">TensorFlow / Keras</span>
-              <span class="skill-node">Scikit-learn</span>
-              <span class="skill-node">Hugging Face Transformers</span>
-              <span class="skill-node">YOLO</span>
-              <span class="skill-node">OpenCV</span>
+            <div class="skill-pills-list">
+              <span class="skill-badge">PyTorch</span>
+              <span class="skill-badge">TensorFlow / Keras</span>
+              <span class="skill-badge">Scikit-learn</span>
+              <span class="skill-badge">Hugging Face Transformers</span>
+              <span class="skill-badge">YOLO</span>
+              <span class="skill-badge">OpenCV</span>
             </div>
           </div>
 
-          <!-- Category 2: Deep Learning -->
-          <div class="skill-branch-card">
-            <h3 class="skill-branch-title">
+          <!-- Cat 2 -->
+          <div class="skill-category-card">
+            <h3 class="skill-cat-title">
               <i data-lucide="network"></i>
               <span>Deep Learning</span>
             </h3>
-            <div class="skill-nodes-list">
-              <span class="skill-node">CNN</span>
-              <span class="skill-node">EfficientNet</span>
-              <span class="skill-node">ResNet</span>
-              <span class="skill-node">Vision Transformers (ViT)</span>
-              <span class="skill-node">LSTM</span>
-              <span class="skill-node">BiLSTM</span>
-              <span class="skill-node">Transformer architectures</span>
+            <div class="skill-pills-list">
+              <span class="skill-badge">CNN</span>
+              <span class="skill-badge">EfficientNet</span>
+              <span class="skill-badge">ResNet</span>
+              <span class="skill-badge">Vision Transformers (ViT)</span>
+              <span class="skill-badge">LSTM</span>
+              <span class="skill-badge">BiLSTM</span>
+              <span class="skill-badge">Transformer architectures</span>
             </div>
           </div>
 
-          <!-- Category 3: Generative AI & LLMs -->
-          <div class="skill-branch-card">
-            <h3 class="skill-branch-title">
+          <!-- Cat 3 -->
+          <div class="skill-category-card">
+            <h3 class="skill-cat-title">
               <i data-lucide="sparkle"></i>
               <span>Generative AI &amp; LLMs</span>
             </h3>
-            <div class="skill-nodes-list">
-              <span class="skill-node">Prompt engineering</span>
-              <span class="skill-node">LangChain</span>
-              <span class="skill-node">ChromaDB (Vector DB)</span>
-              <span class="skill-node">RAG pipelines</span>
+            <div class="skill-pills-list">
+              <span class="skill-badge">Prompt engineering</span>
+              <span class="skill-badge">LangChain</span>
+              <span class="skill-badge">ChromaDB (Vector DB)</span>
+              <span class="skill-badge">RAG pipelines</span>
             </div>
           </div>
 
-          <!-- Category 4: Computer Vision & NLP -->
-          <div class="skill-branch-card">
-            <h3 class="skill-branch-title">
+          <!-- Cat 4 -->
+          <div class="skill-category-card">
+            <h3 class="skill-cat-title">
               <i data-lucide="eye"></i>
               <span>Computer Vision &amp; NLP</span>
             </h3>
-            <div class="skill-nodes-list">
-              <span class="skill-node">Image classification</span>
-              <span class="skill-node">Object detection</span>
-              <span class="skill-node">Deepfake detection</span>
-              <span class="skill-node">Medical image analysis</span>
-              <span class="skill-node">FFT-based forensics</span>
-              <span class="skill-node">Text classification</span>
-              <span class="skill-node">Sequence modelling</span>
-              <span class="skill-node">Plagiarism detection</span>
-              <span class="skill-node">Multilingual NLP (Bengali/English)</span>
+            <div class="skill-pills-list">
+              <span class="skill-badge">Image classification</span>
+              <span class="skill-badge">Object detection</span>
+              <span class="skill-badge">Deepfake detection</span>
+              <span class="skill-badge">Medical image analysis</span>
+              <span class="skill-badge">FFT-based forensics</span>
+              <span class="skill-badge">Text classification</span>
+              <span class="skill-badge">Sequence modelling</span>
+              <span class="skill-badge">Plagiarism detection</span>
+              <span class="skill-badge">Multilingual NLP (Bengali/English)</span>
             </div>
           </div>
 
-          <!-- Category 5: Programming & Backend -->
-          <div class="skill-branch-card">
-            <h3 class="skill-branch-title">
+          <!-- Cat 5 -->
+          <div class="skill-category-card">
+            <h3 class="skill-cat-title">
               <i data-lucide="code-2"></i>
               <span>Programming &amp; Backend</span>
             </h3>
-            <div class="skill-nodes-list">
-              <span class="skill-node" style="color: var(--accent-mint); border-color: var(--accent-emerald);">Python (primary)</span>
-              <span class="skill-node">Dart</span>
-              <span class="skill-node">Java</span>
-              <span class="skill-node">C</span>
-              <span class="skill-node">C++</span>
-              <span class="skill-node">OOP and DSA</span>
-              <span class="skill-node">Basic FastAPI</span>
-              <span class="skill-node">Django</span>
-              <span class="skill-node">Firebase Realtime Database</span>
-              <span class="skill-node">MongoDB</span>
-              <span class="skill-node">SQL</span>
+            <div class="skill-pills-list">
+              <span class="skill-badge" style="color: var(--accent-mint); border-color: rgba(16, 185, 129, 0.3);">Python (primary)</span>
+              <span class="skill-badge">Dart</span>
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">C</span>
+              <span class="skill-badge">C++</span>
+              <span class="skill-badge">OOP and DSA</span>
+              <span class="skill-badge">Basic FastAPI</span>
+              <span class="skill-badge">Django</span>
+              <span class="skill-badge">Firebase Realtime Database</span>
+              <span class="skill-badge">MongoDB</span>
+              <span class="skill-badge">SQL</span>
             </div>
           </div>
 
-          <!-- Category 6: Mobile, Embedded & Graphics -->
-          <div class="skill-branch-card">
-            <h3 class="skill-branch-title">
+          <!-- Cat 6 -->
+          <div class="skill-category-card">
+            <h3 class="skill-cat-title">
               <i data-lucide="smartphone"></i>
               <span>Mobile, Edge AI &amp; Graphics</span>
             </h3>
-            <div class="skill-nodes-list">
-              <span class="skill-node">Flutter/Dart</span>
-              <span class="skill-node">Flame Engine</span>
-              <span class="skill-node">Riverpod</span>
-              <span class="skill-node">cross-platform Android/iOS</span>
-              <span class="skill-node">ESP32-CAM</span>
-              <span class="skill-node">Hugging Face on edge hardware</span>
-              <span class="skill-node">OpenGL</span>
-              <span class="skill-node">GLSL shaders</span>
-              <span class="skill-node">Particle systems</span>
-              <span class="skill-node">Physically based rendering</span>
-              <span class="skill-node">Docker</span>
-              <span class="skill-node">Weights &amp; Biases</span>
-              <span class="skill-node">Linux (Kali, Ubuntu)</span>
-              <span class="skill-node">Git/GitHub</span>
+            <div class="skill-pills-list">
+              <span class="skill-badge">Flutter/Dart</span>
+              <span class="skill-badge">Flame Engine</span>
+              <span class="skill-badge">Riverpod</span>
+              <span class="skill-badge">cross-platform Android/iOS</span>
+              <span class="skill-badge">ESP32-CAM</span>
+              <span class="skill-badge">Hugging Face on edge hardware</span>
+              <span class="skill-badge">OpenGL</span>
+              <span class="skill-badge">GLSL shaders</span>
+              <span class="skill-badge">Particle systems</span>
+              <span class="skill-badge">Physically based rendering</span>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">Weights &amp; Biases</span>
+              <span class="skill-badge">Linux (Kali, Ubuntu)</span>
+              <span class="skill-badge">Git/GitHub</span>
             </div>
           </div>
 
@@ -696,9 +597,9 @@
     <section class="section" id="experience">
       <div class="container">
         <div class="section-header">
-          <span class="section-eyebrow">Background</span>
+          <span class="section-eyebrow">Trajectory</span>
           <h2 class="section-title">Work Experience &amp; Education</h2>
-          <p class="section-desc">Experience and academic degrees as documented in the Curriculum Vitae.</p>
+          <p class="section-desc">Practical software leadership alongside computer science academics.</p>
         </div>
 
         <div class="experience-edu-grid">
@@ -755,16 +656,16 @@
       </div>
     </section>
 
-    <!-- ==================== DIRECT CONTACT & TRANSMISSION ==================== -->
+    <!-- ==================== DIRECT CONTACT & CONNECT ==================== -->
     <section class="section" id="contact">
       <div class="container">
         <div class="contact-card-wrapper">
           <div class="contact-card-inner">
             <div>
-              <span class="section-eyebrow">Get in Touch</span>
+              <span class="section-eyebrow">Connect &amp; Collaborate</span>
               <h2 style="font-size: 2.1rem; margin-bottom: 1rem;">Let's Collaborate on Machine Learning &amp; AI Systems</h2>
               <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 2rem;">
-                Feel free to reach out directly regarding research collaborations, engineering roles, or software inquiries.
+                Whether you have an inquiry regarding research collaborations, graduate positions, or software engineering roles, feel free to reach out directly.
               </p>
 
               <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
@@ -777,7 +678,7 @@
               </div>
             </div>
 
-            <!-- Direct Channel List (Exact from CV) -->
+            <!-- Direct Channel List -->
             <div class="contact-channels-list">
               <div class="contact-channel-item" style="cursor: pointer;" data-copy-val="mdraihan2328@gmail.com" title="Click to copy email">
                 <div class="channel-info">
@@ -824,7 +725,7 @@
                     <i data-lucide="github"></i>
                   </div>
                   <div>
-                    <div class="channel-label">GitHub Profile</div>
+                    <div class="channel-label">GitHub Repositories</div>
                     <div class="channel-val mono">raihan12121</div>
                   </div>
                 </div>
@@ -837,7 +738,7 @@
                     <i data-lucide="map-pin"></i>
                   </div>
                   <div>
-                    <div class="channel-label">Location</div>
+                    <div class="channel-label">Base Location</div>
                     <div class="channel-val">Dhaka, Bangladesh</div>
                   </div>
                 </div>
@@ -860,7 +761,7 @@
       <div style="display: flex; align-items: center; gap: 1.5rem;">
         <a href="https://github.com/raihan12121" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary);">GitHub</a>
         <a href="https://linkedin.com/in/raihanx009" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary);">LinkedIn</a>
-        <a href="#home" class="footer-btn-top">
+        <a href="#home" style="color: var(--accent-emerald); display: inline-flex; align-items: center; gap: 0.35rem;">
           <span>Back to top</span>
           <i data-lucide="arrow-up" style="width: 13px; height: 13px;"></i>
         </a>
@@ -869,9 +770,6 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/game-audio.js"></script>
-  <script src="js/incursion-canvas.js"></script>
-  <script src="js/advanced-labs.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
