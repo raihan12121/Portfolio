@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muhammad Raihan Molla | AI Engineer & ML Researcher</title>
+  <title>Muhammad Raihan Molla | AI Engineer &amp; ML Researcher</title>
   
   <!-- Meta & SEO -->
-  <meta name="description" content="Official portfolio of Muhammad Raihan Molla - AI Engineer, ML Researcher, and Founder of ARI Software Lab. Deep Learning, Computer Vision Forensics, and Mobile Systems.">
+  <meta name="description" content="Portfolio of Muhammad Raihan Molla - AI Engineer, ML Researcher, and Founder of ARI Software Lab. Deep Learning, Computer Vision Forensics, and Mobile Systems.">
   <meta name="keywords" content="Muhammad Raihan Molla, AI Engineer, ML Researcher, Deepfake Detection, EfficientNet-B4, BiLSTM, Incursion, Flutter, PyTorch, BUBT">
   <meta name="author" content="Muhammad Raihan Molla">
   
-  <!-- OpenGraph / Social Sharing -->
+  <!-- OpenGraph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Muhammad Raihan Molla | AI Engineer & ML Researcher">
-  <meta property="og:description" content="Translating Machine Learning Research into Real-World AI Products & Systems.">
+  <meta property="og:title" content="Muhammad Raihan Molla | AI Engineer &amp; ML Researcher">
+  <meta property="og:description" content="Translating Machine Learning Research into Real-World AI Products &amp; Systems.">
   <meta property="og:url" content="https://raihan12121.github.io/Portfolio/">
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/101105519?v=4">
   
@@ -28,23 +28,26 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Main Stylesheet -->
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ==================== HEADER / NAVIGATION ==================== -->
+  <!-- ==================== HEADER ==================== -->
   <header class="site-header">
     <div class="container nav-container">
       <a href="#home" class="brand-link">
-        <span>Muhammad Raihan Molla</span>
-        <span class="brand-badge">AI / ML</span>
+        <div class="brand-logo-badge">RM</div>
+        <div>
+          <span style="color: var(--text-primary);">Muhammad Raihan</span>
+          <span style="color: var(--text-muted); font-size: 0.85rem; font-weight: 400; margin-left: 4px;">Molla</span>
+        </div>
       </a>
 
       <!-- Desktop Navigation -->
       <nav class="nav-menu">
-        <a href="#research" class="nav-link">Research & Theses</a>
-        <a href="#products" class="nav-link">Products & Systems</a>
+        <a href="#research" class="nav-link">Research &amp; Theses</a>
+        <a href="#products" class="nav-link">Systems &amp; Apps</a>
         <a href="#vectors" class="nav-link">Research Vectors</a>
         <a href="#skills" class="nav-link">Technical Stack</a>
         <a href="#experience" class="nav-link">Experience</a>
@@ -55,7 +58,7 @@
       <div class="nav-actions">
         <a href="Muhammad Raihan Molla-CV.pdf" target="_blank" class="btn btn-secondary btn-resume-nav" download>
           <i data-lucide="file-down" style="width: 15px; height: 15px;"></i>
-          <span>Download CV</span>
+          <span>Curriculum Vitae</span>
         </a>
         <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle navigation">
           <i data-lucide="menu" style="width: 20px; height: 20px;"></i>
@@ -66,8 +69,8 @@
 
   <!-- Mobile Drawer -->
   <div class="mobile-nav-drawer" id="mobile-drawer">
-    <a href="#research" class="nav-link">Research & Theses</a>
-    <a href="#products" class="nav-link">Products & Systems</a>
+    <a href="#research" class="nav-link">Research &amp; Theses</a>
+    <a href="#products" class="nav-link">Systems &amp; Apps</a>
     <a href="#vectors" class="nav-link">Research Vectors</a>
     <a href="#skills" class="nav-link">Technical Stack</a>
     <a href="#experience" class="nav-link">Experience</a>
@@ -80,66 +83,96 @@
   <main id="home">
     <!-- ==================== HERO SECTION ==================== -->
     <section class="hero-section">
-      <!-- Incursion Relativistic Accretion Disk Simulation Canvas -->
-      <canvas id="incursion-canvas"></canvas>
+      <div class="container hero-grid">
+        
+        <!-- Hero Left Column -->
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="status-dot"></span>
+            <span>B.Sc. CSE Researcher @ BUBT · Founder @ ARI Software Lab</span>
+          </div>
 
-      <div class="container hero-content">
-        <div class="hero-status-pill">
-          <span class="status-dot"></span>
-          <span>Final-Year CSE Researcher @ BUBT · Founder @ ARI Software Lab</span>
+          <h1 class="hero-title">
+            Translating Machine Learning Research into <span class="gradient-accent">Real-World AI Systems.</span>
+          </h1>
+
+          <div class="hero-role-title">AI Engineer · ML Researcher · Systems &amp; Mobile Developer</div>
+
+          <p class="hero-statement">
+            Final-year Computer Science &amp; Engineering student at <strong>BUBT</strong>. Experienced in computer vision forensics, medical image analysis, cross-platform mobile ecosystems (<strong>Flutter/Dart</strong>), and scientific GPU shader simulations (<strong>OpenGL/GLSL</strong>).
+          </p>
+
+          <div class="hero-action-row">
+            <a href="#research" class="btn btn-primary">
+              <i data-lucide="book-open" style="width: 16px; height: 16px;"></i>
+              Explore Research
+            </a>
+            <a href="#products" class="btn btn-secondary">
+              <i data-lucide="cpu" style="width: 16px; height: 16px;"></i>
+              Systems &amp; Apps
+            </a>
+            <a href="Muhammad Raihan Molla-CV.pdf" target="_blank" class="btn btn-accent" download>
+              <i data-lucide="file-text" style="width: 16px; height: 16px;"></i>
+              Download CV (PDF)
+            </a>
+          </div>
+
+          <!-- Proof Numbers -->
+          <div class="proof-numbers-grid">
+            <div class="proof-card">
+              <div class="proof-val">1,000+</div>
+              <div class="proof-label">Google Play Downloads across 3 published apps</div>
+            </div>
+            <div class="proof-card">
+              <div class="proof-val">27</div>
+              <div class="proof-label">Custom GLSL Shaders in 30k particle astrophysics simulation</div>
+            </div>
+            <div class="proof-card">
+              <div class="proof-val">3</div>
+              <div class="proof-label">Benchmark Datasets evaluated for Deepfake Forensics</div>
+            </div>
+            <div class="proof-card">
+              <div class="proof-val">16+</div>
+              <div class="proof-label">Open-source repositories in AI, Systems &amp; CP</div>
+            </div>
+          </div>
         </div>
 
-        <h1 class="hero-title">
-          Translating Machine Learning Research into <span class="gradient-title">Real-World AI Systems.</span>
-        </h1>
+        <!-- Hero Right Column: Interactive Research & Systems Lab Showcase -->
+        <div class="hero-lab-card">
+          <div class="lab-card-header">
+            <div class="lab-tabs">
+              <button class="lab-tab-btn active" data-lab-tab="incursion">⚡ Incursion Physics</button>
+              <button class="lab-tab-btn" data-lab-tab="fft">🔬 FFT Forensics</button>
+              <button class="lab-tab-btn" data-lab-tab="mobile">📱 ARI Mobile Lab</button>
+            </div>
+            <span class="mono" style="font-size: 0.72rem; color: #10b981;">LIVE SIMULATION</span>
+          </div>
 
-        <p class="hero-statement">
-          I am an <strong>AI Engineer and ML Researcher</strong> with a strong foundation in deep learning, computer vision forensics, and scientific simulation. Experience in engineering cross-platform mobile ecosystems (<strong>Flutter/Dart</strong>), robust backend pipelines (<strong>Python/FastAPI/Django</strong>), and real-time shader graphics (<strong>OpenGL/GLSL</strong>).
-        </p>
+          <div class="lab-canvas-container">
+            <canvas id="hero-incursion-canvas"></canvas>
+          </div>
 
-        <div class="hero-action-row">
-          <a href="#research" class="btn btn-primary">
-            <i data-lucide="book-open" style="width: 16px; height: 16px;"></i>
-            Explore Research
-          </a>
-          <a href="#products" class="btn btn-secondary">
-            <i data-lucide="terminal" style="width: 16px; height: 16px;"></i>
-            View Systems & Apps
-          </a>
-          <a href="Muhammad Raihan Molla-CV.pdf" target="_blank" class="btn btn-secondary" download>
-            <i data-lucide="file-text" style="width: 16px; height: 16px;"></i>
-            Curriculum Vitae (PDF)
-          </a>
+          <div class="lab-card-footer">
+            <div class="lab-meta-row">
+              <span class="lab-meta-title" id="lab-meta-title">Incursion: Black Hole Geodesics</span>
+              <span class="lab-meta-tag" id="lab-meta-tag">27 GLSL Shaders · 30k Particles</span>
+            </div>
+            <p class="lab-meta-desc" id="lab-meta-desc">
+              Relativistic Doppler beaming &amp; Kerr black hole accretion physics presented at BUBT.
+            </p>
+          </div>
         </div>
 
-        <!-- Verified Proof Numbers from CV -->
-        <div class="proof-numbers-grid">
-          <div class="proof-card">
-            <div class="proof-val">1,000+</div>
-            <div class="proof-label">Google Play Downloads across 3 published mobile apps</div>
-          </div>
-          <div class="proof-card">
-            <div class="proof-val">27</div>
-            <div class="proof-label">Custom GLSL Shaders in 30k particle astrophysics simulation</div>
-          </div>
-          <div class="proof-card">
-            <div class="proof-val">3</div>
-            <div class="proof-label">Benchmark Datasets evaluated for Deepfake Forensics (FF++, Celeb-DF, DFDC)</div>
-          </div>
-          <div class="proof-card">
-            <div class="proof-val">16+</div>
-            <div class="proof-label">Open-source repositories in AI, Systems & Problem Solving</div>
-          </div>
-        </div>
       </div>
     </section>
 
-    <!-- ==================== RESEARCH & PUBLICATIONS ==================== -->
+    <!-- ==================== RESEARCH & THESES ==================== -->
     <section class="section" id="research">
       <div class="container">
         <div class="section-header">
-          <span class="section-eyebrow">Academic Rigor & Methodology</span>
-          <h2 class="section-title">Research Works & Theses</h2>
+          <span class="section-eyebrow">Academic Research &amp; Methodology</span>
+          <h2 class="section-title">Research Works &amp; Theses</h2>
           <p class="section-desc">Empirical investigations in computer vision forensics, multi-step time-series forecasting, and medical imaging diagnostics.</p>
         </div>
 
@@ -158,7 +191,7 @@
 
             <h3 class="research-title">Deepfake Image Detection — Cross-Dataset Generalization Study</h3>
             <p class="research-summary">
-              Investigated deepfake detection generalization failures across diverse generative domains. Developed a dual-stream spatial and Fast Fourier Transform (FFT) frequency fusion network utilizing an EfficientNet-B4 backbone to identify imperceptible frequency-domain manipulation artifacts.
+              Investigated generalization vulnerabilities in deepfake detection across unconstrained generative domains. Developed a dual-stream spatial and Fast Fourier Transform (FFT) frequency fusion network utilizing an EfficientNet-B4 backbone to identify imperceptible frequency-domain manipulation artifacts.
             </p>
 
             <ul class="research-details-list">
@@ -172,7 +205,7 @@
               </li>
               <li class="research-detail-item">
                 <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
-                <span><strong>Training & Robustness:</strong> GPU-accelerated training pipeline featuring targeted spatial augmentations, Gaussian blurring, compression artifacts, and adversarial perturbation testing.</span>
+                <span><strong>Training &amp; Robustness:</strong> GPU-accelerated training pipeline featuring targeted spatial augmentations, Gaussian blurring, compression artifacts, and adversarial perturbation testing.</span>
               </li>
             </ul>
 
@@ -180,7 +213,7 @@
               <span class="mono" style="font-size: 0.78rem; color: var(--text-muted); margin-right: 0.5rem;">Core Stack:</span>
               <span class="tag-badge">PyTorch</span>
               <span class="tag-badge">EfficientNet-B4</span>
-              <span class="tag-badge">FFT Frequency Analysis</span>
+              <span class="tag-badge">2D FFT Magnitude</span>
               <span class="tag-badge">OpenCV</span>
               <span class="tag-badge">Weights &amp; Biases</span>
             </div>
@@ -261,12 +294,12 @@
       </div>
     </section>
 
-    <!-- ==================== SYSTEMS, SIMULATION & PRODUCTS ==================== -->
+    <!-- ==================== SYSTEMS & PRODUCTS ==================== -->
     <section class="section" id="products">
       <div class="container">
         <div class="section-header">
-          <span class="section-eyebrow">Engineering & Production</span>
-          <h2 class="section-title">Featured Systems & Software</h2>
+          <span class="section-eyebrow">Engineering &amp; Production</span>
+          <h2 class="section-title">Featured Systems &amp; Software</h2>
           <p class="section-desc">Commercial mobile software published on Google Play, real-time astrophysics graphics engines, and NLP backends.</p>
         </div>
 
@@ -284,7 +317,7 @@
                 <i data-lucide="download-cloud" style="width: 14px; height: 14px; color: var(--accent-cyan);"></i>
                 <span>1,000+ Downloads on Google Play across 3 live apps</span>
               </div>
-              <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+              <div style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.6;">
                 • <strong>Money Manager:</strong> Personal expense tracker with full Bengali localization.<br>
                 • <strong>PDF Scanner:</strong> Mobile document scanning and image filtering utility.<br>
                 • <strong>AnimalCam AR &amp; Music Player:</strong> Interactive camera AR experience &amp; media engine.
@@ -313,7 +346,7 @@
                 <i data-lucide="cpu" style="width: 14px; height: 14px; color: var(--accent-cyan);"></i>
                 <span>27 Custom GLSL Shaders · 30,000 Particle Physics System</span>
               </div>
-              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.6;">
                 Presented to an academic panel at BUBT. Features real-time ray-marching geodesics, relativistic Doppler beaming shaders, and particle lifecycle dynamics.
               </p>
             </div>
@@ -342,7 +375,7 @@
                 <i data-lucide="layers" style="width: 14px; height: 14px; color: var(--accent-cyan);"></i>
                 <span>Semantic Embeddings &amp; High-Throughput REST API</span>
               </div>
-              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.6;">
                 Supports multi-document batch analysis, vector clustering, and structured JSON reporting via a FastAPI backend interface.
               </p>
             </div>
@@ -371,7 +404,7 @@
                 <i data-lucide="shield-check" style="width: 14px; height: 14px; color: var(--accent-cyan);"></i>
                 <span>Interactive Vulnerability Sandbox &amp; Verification Labs</span>
               </div>
-              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.6;">
                 Built with Next.js App Router, TypeScript, and responsive UI components for interactive real-time exploit payload testing.
               </p>
             </div>
@@ -402,7 +435,7 @@
       <div class="container">
         <div class="section-header">
           <span class="section-eyebrow">Core Inquiry Areas</span>
-          <h2 class="section-title">Research Interests & Directions</h2>
+          <h2 class="section-title">Research Interests &amp; Directions</h2>
           <p class="section-desc">Key technical domains where I actively conduct experiments, read literature, and build prototypes.</p>
         </div>
 
@@ -524,7 +557,7 @@
               <span>Programming Languages</span>
             </h3>
             <div class="skill-items-list">
-              <span class="skill-pill" style="border-color: rgba(56, 189, 248, 0.4);">Python (Primary)</span>
+              <span class="skill-pill" style="border-color: rgba(56, 189, 248, 0.4); color: var(--accent-cyan);">Python (Primary)</span>
               <span class="skill-pill">Dart</span>
               <span class="skill-pill">Java</span>
               <span class="skill-pill">C++ / C</span>
